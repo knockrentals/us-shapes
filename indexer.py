@@ -7,7 +7,7 @@ class Indexer:
 	def __init__(self, client):
 		self.client = client
 
-	def bulk_index(self, index, type, shapefile, bulk_index_limit=400, sleep_time=0.1):
+	def bulk_index(self, index, type, shapefile, bulk_index_limit=400, sleep_time=1):
 		print 'Indexing [%s] docs into [%s] from %s' % (type, index, shapefile)
 
 		self.client.bulk_size = bulk_index_limit
