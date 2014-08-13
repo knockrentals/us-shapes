@@ -8,10 +8,10 @@ run.py [-h <elasticsearch-host>]  [-p <elasticsearch-port>] [--use-online-ogre]
 ```
 
 # Dependencies:
-[Elasticsearch](http://www.elasticsearch.org)
-[pyes](https://pyes.readthedocs.org/en/latest)
-[ogre](https://github.com/wavded/ogre) (Optional. See below)
-[GDAL](http://www.gdal.org/index.html) (Optional. See below)
+* [Elasticsearch](http://www.elasticsearch.org)
+* [pyes](https://pyes.readthedocs.org/en/latest)
+* [ogre](https://github.com/wavded/ogre) (Optional. See below)
+* [GDAL](http://www.gdal.org/index.html) (Optional. See below)
 
 
 # How to install Elasticsearch
