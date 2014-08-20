@@ -1,4 +1,7 @@
 *.pyc
 shapes/
 suggestions/
+*.iml
+.idea/
+log*
 

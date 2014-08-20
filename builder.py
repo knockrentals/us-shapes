@@ -5,211 +5,218 @@ from loaders import *
 from converter import GeoJSONConverter
 from utils import sanitize, state_codes
 
+
 class Builder:
+    def __init__(self):
+        self.converter = GeoJSONConverter()
 
-	def __init__(self):
-		self.converter = GeoJSONConverter()
+    good_line_re = re.compile(r'{\s*"type":\s*"Feature",\s*"properties":\s*')
 
-	good_line_re = re.compile(r'{\s*"type":\s*"Feature",\s*"properties":\s*')
+    @staticmethod
+    def build_neighborhood_shapes(self, outfile, raw_geodir='raw_geoshapes',
+                                  raw_geofile='raw_shapes_neighborhood.json'):
 
-	def build_neighborhood_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_neighborhood.json'):
+        print "Building neighborhood shape files"
 
-		print "Building neighborhood shape files"
-		
-		shapefiles_dir = download_neighborhood_shapes()
-		geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir, shapefile_prefix='neighborhood', shapefiles_dir=shapefiles_dir)
+        shapefiles_dir = download_neighborhood_shapes()
+        geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir,
+                                                 shapefile_prefix='neighborhood', shapefiles_dir=shapefiles_dir)
 
-		# Format results
+        # Format results
 
-		raw_geo_re = re.compile('^(\{.*?)"STATE":\s*"([^"]+)".*?"CITY":\s*"([^"]+)".\s*"NAME":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
+        raw_geo_re = re.compile(
+            '^(\{.*?)"STATE":\s*"([^"]+)".*?"CITY":\s*"([^"]+)".\s*"NAME":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
 
-		doc_template = '{"id": "%(id)s", "state": "%(state)s", "city": "%(city)s", "neighborhood": "%(neighborhood)s", "geometry": %(coordinates)s}\n'
+        doc_template = '{"id": "%(id)s", "state": "%(state)s", "city": "%(city)s", "neighborhood": "%(neighborhood)s", "geometry": %(coordinates)s}\n'
 
-		with open(outfile, 'a') as out:
-			print "Formatting %s into output file %s" % (geofile_path, outfile)
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (geofile_path, outfile)
 
-			for line in fileinput.input(geofile_path):
-				is_good_line = self.good_line_re.match(line)
-				if is_good_line is None: 
-					continue
+            for line in fileinput.input(geofile_path):
+                is_good_line = self.good_line_re.match(line)
+                if is_good_line is None:
+                    continue
 
-				m = raw_geo_re.match(line)
+                m = raw_geo_re.match(line)
 
-				(neighborhood, city, state, coordinates) = (m.group(4), m.group(3), m.group(2), m.group(5))
-				id = sanitize("%s_%s_%s" % (neighborhood, city, state))
+                (neighborhood, city, state, coordinates) = (m.group(4), m.group(3), m.group(2), m.group(5))
+                id = sanitize("%s_%s_%s" % (neighborhood, city, state))
 
-				data = {
-					'id': id,
-					'neighborhood': neighborhood,
-					'city': city,
-					'state': state,
-					'coordinates': coordinates
-				}
+                data = {
+                'id': id,
+                'neighborhood': neighborhood,
+                'city': city,
+                'state': state,
+                'coordinates': coordinates
+                }
 
-				out.write(doc_template % data)
+                out.write(doc_template % data)
 
 
-	def build_city_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_city.json'):
+    @staticmethod
+    def build_city_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_city.json'):
 
-		print "Building city shape files"
-	 	
-		shapefiles_dir = download_city_shapes()
-		geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir, shapefile_prefix='city', shapefiles_dir=shapefiles_dir)
+        print "Building city shape files"
 
-		# Format results
+        shapefiles_dir = download_city_shapes()
+        geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir,
+                                                 shapefile_prefix='city', shapefiles_dir=shapefiles_dir)
 
-		raw_geo_re = re.compile('^\{.*?\{.*?\s*"STATEFP":\s*"([^"]+)".*?NAME":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
+        # Format results
 
-		doc_template = '{"id": "%(id)s", "state": "%(state)s", "city": "%(city)s", "geometry": %(coordinates)s}\n'
+        raw_geo_re = re.compile(
+            '^\{.*?\{.*?\s*"STATEFP":\s*"([^"]+)".*?NAME":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
 
-		with open(outfile,'a') as out:
-			print "Formatting %s into output file %s" % (geofile_path, outfile)
+        doc_template = '{"id": "%(id)s", "state": "%(state)s", "city": "%(city)s", "geometry": %(coordinates)s}\n'
 
-			for line in fileinput.input(geofile_path):
-				is_good_line = self.good_line_re.match(line)
-				if is_good_line is None: 
-					continue
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (geofile_path, outfile)
 
-				m = raw_geo_re.match(line)
+            for line in fileinput.input(geofile_path):
+                is_good_line = self.good_line_re.match(line)
+                if is_good_line is None:
+                    continue
 
-				(state_code, city, coordinates) = (m.group(1), m.group(2), m.group(3))
-				state = state_codes[state_code] if state_code in state_codes else state_code
-				id = sanitize("%s_%s" % (city, state))
+                m = raw_geo_re.match(line)
 
-				data = {
-					'id': id,
-					'city': city,
-					'state': state,
-					'coordinates': coordinates
-				}
+                (state_code, city, coordinates) = (m.group(1), m.group(2), m.group(3))
+                state = state_codes[state_code] if state_code in state_codes else state_code
+                id = sanitize("%s_%s" % (city, state))
 
-				out.write(doc_template % data)
+                data = {
+                'id': id,
+                'city': city,
+                'state': state,
+                'coordinates': coordinates
+                }
 
-	def build_state_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
+                out.write(doc_template % data)
 
-		print "Building state shape files"
+    @staticmethod
+    def build_state_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
 
-		shapefiles_dir = download_state_shapes()
-		geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir, shapefile_prefix='state', shapefiles_dir=shapefiles_dir)
+        print "Building state shape files"
 
-		# Format results
+        shapefiles_dir = download_state_shapes()
+        geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir,
+                                                 shapefile_prefix='state', shapefiles_dir=shapefiles_dir)
 
-		raw_geo_re = re.compile('^\{.*?: \{.*?"STUSPS": "([^"]+)", "NAME": "([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
+        # Format results
 
-		doc_template = '{"id": "%(id)s", "state": "%(state)s", "postal": "%(postal)s", "geometry": %(coordinates)s}\n'
+        raw_geo_re = re.compile(
+            '^\{.*?: \{.*?"STUSPS": "([^"]+)", "NAME": "([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
 
-		with open(outfile, 'a') as out:
-			print "Formatting %s into output file %s" % (geofile_path, outfile)
+        doc_template = '{"id": "%(id)s", "state": "%(state)s", "postal": "%(postal)s", "geometry": %(coordinates)s}\n'
 
-			for line in fileinput.input(geofile_path):
-				is_good_line = self.good_line_re.match(line)
-				if is_good_line is None: 
-					continue
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (geofile_path, outfile)
 
-				m = raw_geo_re.match(line)
+            for line in fileinput.input(geofile_path):
+                is_good_line = self.good_line_re.match(line)
+                if is_good_line is None:
+                    continue
 
-				(postal, state, id, coordinates) = (m.group(1), m.group(2), sanitize(m.group(2)), m.group(3))
-				
-				data = {
-					'id': id,
-					'state': state,
-					'postal': postal,
-					'coordinates': coordinates
-				}
+                m = raw_geo_re.match(line)
 
-				out.write(doc_template % data)
+                (postal, state, id, coordinates) = (m.group(1), m.group(2), sanitize(m.group(2)), m.group(3))
 
+                data = {
+                'id': id,
+                'state': state,
+                'postal': postal,
+                'coordinates': coordinates
+                }
 
-	def build_zip_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
+                out.write(doc_template % data)
 
-		print "Building zip shape files"
+    @staticmethod
+    def build_zip_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
 
-		shapefiles_dir = download_zip_shapes()
-		geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir, shapefile_prefix='zip', shapefiles_dir=shapefiles_dir)
+        print "Building zip shape files"
 
-		# Format results
+        shapefiles_dir = download_zip_shapes()
+        geofile_path = self.converter.to_geojson(raw_geofile=raw_geofile, raw_geodir=raw_geodir, shapefile_prefix='zip',
+                                                 shapefiles_dir=shapefiles_dir)
 
-		raw_geo_re = re.compile('^\{.*?"ZCTA5CE10":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
+        # Format results
 
-		doc_template = '{"id": "%(id)s", "zipcode": "%(zipcode)s", "geometry": %(coordinates)s}\n'
+        raw_geo_re = re.compile('^\{.*?"ZCTA5CE10":\s*"([^"]+)".*?\}.*"geometry":\s*(\{.*?\})\s*\},*$')
 
-		with open(outfile, 'a') as out:
-			print "Formatting %s into output file %s" % (geofile_path, outfile)
+        doc_template = '{"id": "%(id)s", "zipcode": "%(zipcode)s", "geometry": %(coordinates)s}\n'
 
-			for line in fileinput.input(geofile_path):
-				is_good_line = self.good_line_re.match(line)
-				if is_good_line is None: 
-					continue
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (geofile_path, outfile)
 
-				m = raw_geo_re.match(line)
+            for line in fileinput.input(geofile_path):
+                is_good_line = self.good_line_re.match(line)
+                if is_good_line is None:
+                    continue
 
-				(zipcode, coordinates) = (m.group(1), m.group(2))
+                m = raw_geo_re.match(line)
 
-				data = {
-					'id': zipcode,
-					'zipcode': zipcode,
-					'coordinates': coordinates
-				}
+                (zipcode, coordinates) = (m.group(1), m.group(2))
 
-				out.write(doc_template % data)
+                data = {
+                'id': zipcode,
+                'zipcode': zipcode,
+                'coordinates': coordinates
+                }
 
+                out.write(doc_template % data)
 
-	def build_neighborhood_suggestions(self, outfile, neighborhood_geofile):
+    @staticmethod
+    def build_neighborhood_suggestions(self, outfile, neighborhood_geofile):
 
-		print "Building neighborhood suggestion files"
+        print "Building neighborhood suggestion files"
 
-		neighborhood_re = re.compile('^.*?"state":\s*"([^"]+)",\s*"city":\s*"([^"]+)",\s*"neighborhood":\s*"([^"]+)".*')
+        neighborhood_re = re.compile('^.*?"state":\s*"([^"]+)",\s*"city":\s*"([^"]+)",\s*"neighborhood":\s*"([^"]+)".*')
 
-		doc_template = '{"name" : "%(id)s","suggest" : { "input": "%(full_neighborhood)s", "output": "%(full_neighborhood)s", "payload" : {"type": "neighborhood", "id": "%(id)s"}}}\n'
+        doc_template = '{"name" : "%(id)s","suggest" : { "input": "%(full_neighborhood)s", "output": "%(full_neighborhood)s", "payload" : {"type": "neighborhood", "id": "%(id)s"}}}\n'
 
-		with open(outfile,'a') as out:
-			print "Formatting %s into output file %s" % (neighborhood_geofile, outfile)
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (neighborhood_geofile, outfile)
 
-			for line in fileinput.input(neighborhood_geofile):
-				
+            for line in fileinput.input(neighborhood_geofile):
+                m = neighborhood_re.match(line)
 
-				m = neighborhood_re.match(line)
-				
-				state = m.group(1).upper()
-				city = m.group(2)
-				neighborhood = m.group(3)
+                state = m.group(1).upper()
+                city = m.group(2)
+                neighborhood = m.group(3)
 
-				id = ("%s_%s_%s" % (neighborhood, city, state)).lower().replace(' ','_').replace('-','_')
-				full_neighborhood = ("%s, %s, %s" % (neighborhood, city, state))
+                id = ("%s_%s_%s" % (neighborhood, city, state)).lower().replace(' ', '_').replace('-', '_')
+                full_neighborhood = ("%s, %s, %s" % (neighborhood, city, state))
 
-				data = {
-					'id' : id,
-					'full_neighborhood' : full_neighborhood
-				}
+                data = {
+                'id': id,
+                'full_neighborhood': full_neighborhood
+                }
 
-				out.write(doc_template % data)
+                out.write(doc_template % data)
 
+    @staticmethod
+    def build_city_suggestions(self, outfile, city_geofile):
 
-	def build_city_suggestions(self, outfile, city_geofile):
+        print "Building city suggestion files"
 
-		print "Building city suggestion files"
+        city_re = re.compile('^.*?"state": "([^"]+)", "city": "([^"]+).*')
 
-		city_re = re.compile('^.*?"state": "([^"]+)", "city": "([^"]+).*')
+        doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(city)s, %(state)s","output": "%(city)s, %(state)s","payload": {"type": "city", "id": "%(id)s"}}}\n'
 
-		doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(city)s, %(state)s","output": "%(city)s, %(state)s","payload": {"type": "city", "id": "%(id)s"}}}\n'
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (city_geofile, outfile)
 
-		with open(outfile, 'a') as out:
-			print "Formatting %s into output file %s" % (city_geofile, outfile)
+            for line in fileinput.input(city_geofile):
+                m = city_re.match(line)
 
-			for line in fileinput.input(city_geofile):
-				
+                state = m.group(1)
+                city = m.group(2)
 
-				m = city_re.match(line)
+                data = {
+                'state': state,
+                'city': city,
+                'id': ("%s_%s" % (city, state)).lower()
+                }
 
-				state = m.group(1)
-				city = m.group(2)
-
-				data = {
-					'state' : state,
-					'city' : city,
-					'id' : ("%s_%s" % (city, state)).lower()
-				}
-
-				out.write(doc_template % data)
+                out.write(doc_template % data)
 
 
