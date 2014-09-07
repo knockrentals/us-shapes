@@ -10,7 +10,7 @@ import sys
 import getopt
 
 
-class PlacesIndexer():
+class USShapesRunner():
     def __init__(self, args):
         host = 'localhost'
         port = '9200'
@@ -41,8 +41,7 @@ class PlacesIndexer():
         self.initialize_mappings(mapper)
 
         self.index_shapes(builder, indexer)
-
-    # self.index_suggestions(builder, indexer)
+        self.index_suggestions(builder, indexer)
 
     def initialize_mappings(self, mapper):
         # Create indices and put mappings
@@ -77,7 +76,7 @@ class PlacesIndexer():
         indexer.bulk_index(self.shapes_index, 'neighborhood', neighborhood_shapes_file)
         indexer.bulk_index(self.shapes_index, 'city', city_shapes_file)
         indexer.bulk_index(self.shapes_index, 'state', state_shapes_file)
-        # indexer.bulk_index(self.shapes_index, 'zip', zip_shapes_file)
+        indexer.bulk_index(self.shapes_index, 'zip', zip_shapes_file)
 
         chdir('..')
 
@@ -95,11 +94,11 @@ class PlacesIndexer():
 
         if not isfile(neighborhood_suggestions_file):
             print 'Building neighborhood suggestions file'
-            neighborhood_geofile = '../%s/%s' % (shapes_dir, neighborhood_shapes_file)
+            neighborhood_geofile = '../%s/%s' % (suggestions_dir, neighborhood_suggestions_file)
             builder.build_neighborhood_suggestions(outfile=neighborhood_suggestions_file,
                                                    neighborhood_geofile=neighborhood_geofile)
         if not isfile(city_suggestions_file):
-            city_geofile = '../%s/%s' % (shapes_dir, city_shapes_file)
+            city_geofile = '../%s/%s' % (suggestions_dir, city_suggestions_file)
             builder.build_city_suggestions(outfile=city_suggestions_file, city_geofile=city_geofile)
 
         # Index suggestions
@@ -110,4 +109,4 @@ class PlacesIndexer():
 
 
 if __name__ == "__main__":
-    PlacesIndexer(sys.argv[1:])
+    USShapesRunner(sys.argv[1:])

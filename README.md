@@ -1,4 +1,4 @@
-ESIndexer
+U.S. Shapes Indexer
 =========
 Retrieve, convert, and index shapefiles (and suggestions based on those files) from census.gov and Zillow
 
