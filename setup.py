@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(name='usshapes',
-      version='1.0',
+      version='0.1',
       description='U.S. Shapefile Indexer for Elasticsearch',
       author='Daniel Sarfati',
       author_email='daniel@knockrentals.com',
