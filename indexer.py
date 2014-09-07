@@ -1,6 +1,5 @@
 from fileinput import input
 from time import sleep
-from pyes import ES
 from pyes.exceptions import NoServerAvailable
 import re
 

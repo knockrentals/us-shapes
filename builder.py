@@ -1,5 +1,4 @@
 import fileinput
-import re
 
 from loaders import *
 from converter import GeoJSONConverter

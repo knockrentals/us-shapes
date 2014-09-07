@@ -1,12 +1,12 @@
 #!/usr/bin/env python
+from setuptools import setup, find_packages
 
-from distutils.core import setup
-
-setup(name='us-shapes',
+setup(name='usshapes',
       version='1.0',
       description='U.S. Shapefile Indexer for Elasticsearch',
       author='Daniel Sarfati',
       author_email='daniel@knockrentals.com',
-      url='http://www.python.org/sigs/distutils-sig/',
-      packages=['distutils', 'distutils.command'],
-     )
+      url='https://github.com/fatisar/us-shapes',
+      packages=find_packages(),
+      requires=['pyes']
+)
