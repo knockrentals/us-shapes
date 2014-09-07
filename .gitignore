@@ -4,5 +4,5 @@ suggestions/
 *.iml
 .idea/
 log*
-dist/
 *.egg-info
+env

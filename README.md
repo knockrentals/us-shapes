@@ -13,15 +13,21 @@ run.py [-h <elasticsearch-host>]  [-p <elasticsearch-port>] [--use-online-ogre]
 * [ogre](https://github.com/wavded/ogre) (Optional. See below)
 * [GDAL](http://www.gdal.org/index.html) (Optional. See below)
 
+If you want to use virtualenv:
+```bash
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+```
 
 # How to install Elasticsearch
 ```
 Read the docs, yo
 ```
 
-# How to install pyes
+# How to install dependencies
 ```
-pip install pyes
+pip install -r requirements.txt
 ```
 
 # ogre and GDAL
@@ -32,3 +38,14 @@ is that converting large shapefiles will be a very slow process, and you might e
 their server.
 
 It is recommended that you install these libraries locally.
+
+```
+git@github.com:wavded/ogre.git
+./bin/ogre.js -p 3000
+```
+
+Or install globally:
+```
+npm install -g ogre
+ogre -p 3000
+```

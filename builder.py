@@ -11,7 +11,6 @@ class Builder:
 
     good_line_re = re.compile(r'{\s*"type":\s*"Feature",\s*"properties":\s*')
 
-    @staticmethod
     def build_neighborhood_shapes(self, outfile, raw_geodir='raw_geoshapes',
                                   raw_geofile='raw_shapes_neighborhood.json'):
 
@@ -52,7 +51,6 @@ class Builder:
                 out.write(doc_template % data)
 
 
-    @staticmethod
     def build_city_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_city.json'):
 
         print "Building city shape files"
@@ -91,7 +89,6 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    @staticmethod
     def build_state_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
 
         print "Building state shape files"
@@ -128,7 +125,6 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    @staticmethod
     def build_zip_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
 
         print "Building zip shape files"
@@ -163,7 +159,6 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    @staticmethod
     def build_neighborhood_suggestions(self, outfile, neighborhood_geofile):
 
         print "Building neighborhood suggestion files"
@@ -192,7 +187,6 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    @staticmethod
     def build_city_suggestions(self, outfile, city_geofile):
 
         print "Building city suggestion files"

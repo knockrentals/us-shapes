@@ -71,6 +71,8 @@ class USShapesRunner():
             builder.build_city_shapes(outfile=city_shapes_file)
         if not isfile(state_shapes_file):
             builder.build_state_shapes(outfile=state_shapes_file)
+        if not isfile(zip_shapes_file):
+            builder.build_zip_shapes(outfile=zip_shapes_file)
 
         # Index shapes
         indexer.bulk_index(self.shapes_index, 'neighborhood', neighborhood_shapes_file)
