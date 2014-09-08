@@ -6,6 +6,9 @@ from subprocess import check_output
 
 
 class GeoJSONConverter:
+    def __init__(self, ogre_host='localhost:3000'):
+        self.ogre_host=ogre_host
+
     def to_geojson(self, raw_geofile, raw_geodir='geojson', shapefile_prefix='', shapefile_ext='zip',
                    shapefiles_dir='shapefiles'):
         if not isdir(raw_geodir):
@@ -26,7 +29,7 @@ class GeoJSONConverter:
             for filename in files:
                 try:
                     print "Converting %s to GeoJSON" % filename
-                    raw_command = r'curl -F "upload=@%s" localhost:3000/convert' % filename
+                    raw_command = r'curl -F "upload=@%s" %s/convert' % (filename, self.ogre_host)
                     command = split(raw_command)
                     converted = check_output(command)
                     out.write("%s" % converted)

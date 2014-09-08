@@ -3,9 +3,18 @@ U.S. Shapes Indexer
 Retrieve, convert, and index shapefiles (and suggestions based on those files) from census.gov and Zillow
 
 # Usage
-```bash
-run.py [-h <elasticsearch-host>]  [-p <elasticsearch-port>] [--use-online-ogre]
 ```
+$ run.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions]
+```
+
+## Options:
+* es-host: the elastic search host to use; default: localhost:9200
+* ogre-host: the elastic search host to use; default: localhost:3000
+* no-batch: turn off batch mode
+* batch-size: how large should each batch be; default: 100
+* excludes: comma-separated list of excluded types; possible types: 'neighborhood', 'city', 'state', 'zip'
+* no-shapes: skip creation and indexing of shapes
+* no-suggestions: skip creation and indexing of suggestions
 
 # Dependencies:
 * [Elasticsearch](http://www.elasticsearch.org)
@@ -32,7 +41,7 @@ pip install -r requirements.txt
 
 # ogre and GDAL
 ESIndexer needs these libraries for converting shapefiles to GeoJSON files.
-However, there is an [ogre instance](http://ogre.adc4gis.com) available online that will
+However, there is an [ogre instance](http://ogre.adc4gis.com/convert) available online that will
 obviate the need for a local install of these libraries. The problem with that option, though,
 is that converting large shapefiles will be a very slow process, and you might even bring down
 their server.

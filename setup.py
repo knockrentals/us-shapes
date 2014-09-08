@@ -8,5 +8,5 @@ setup(name='usshapes',
       author_email='daniel@knockrentals.com',
       url='https://github.com/fatisar/us-shapes',
       packages=find_packages(),
-      requires=['pyes']
+      requires=['pyes', 'beautifulsoup4']
 )

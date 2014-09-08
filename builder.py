@@ -6,13 +6,16 @@ from utils import sanitize, state_codes
 
 
 class Builder:
-    def __init__(self):
-        self.converter = GeoJSONConverter()
+    def __init__(self, converter):
+        self.converter = converter
 
     good_line_re = re.compile(r'{\s*"type":\s*"Feature",\s*"properties":\s*')
 
-    def build_neighborhood_shapes(self, outfile, raw_geodir='raw_geoshapes',
+    def build_neighborhood_shapes(self, outfile, raw_geodir='geojson',
                                   raw_geofile='raw_shapes_neighborhood.json'):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         print "Building neighborhood shape files"
 
@@ -41,17 +44,19 @@ class Builder:
                 id = sanitize("%s_%s_%s" % (neighborhood, city, state))
 
                 data = {
-                'id': id,
-                'neighborhood': neighborhood,
-                'city': city,
-                'state': state,
-                'coordinates': coordinates
+                    'id': id,
+                    'neighborhood': neighborhood,
+                    'city': city,
+                    'state': state,
+                    'coordinates': coordinates
                 }
 
                 out.write(doc_template % data)
 
-
-    def build_city_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_city.json'):
+    def build_city_shapes(self, outfile, raw_geodir='geojson', raw_geofile='raw_shapes_city.json'):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         print "Building city shape files"
 
@@ -81,15 +86,18 @@ class Builder:
                 id = sanitize("%s_%s" % (city, state))
 
                 data = {
-                'id': id,
-                'city': city,
-                'state': state,
-                'coordinates': coordinates
+                    'id': id,
+                    'city': city,
+                    'state': state,
+                    'coordinates': coordinates
                 }
 
                 out.write(doc_template % data)
 
-    def build_state_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
+    def build_state_shapes(self, outfile, raw_geodir='geojson', raw_geofile='raw_shapes_state.json'):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         print "Building state shape files"
 
@@ -117,15 +125,18 @@ class Builder:
                 (postal, state, id, coordinates) = (m.group(1), m.group(2), sanitize(m.group(2)), m.group(3))
 
                 data = {
-                'id': id,
-                'state': state,
-                'postal': postal,
-                'coordinates': coordinates
+                    'id': id,
+                    'state': state,
+                    'postal': postal,
+                    'coordinates': coordinates
                 }
 
                 out.write(doc_template % data)
 
-    def build_zip_shapes(self, outfile, raw_geodir='raw_geoshapes', raw_geofile='raw_shapes_state.json'):
+    def build_zip_shapes(self, outfile, raw_geodir='geojson', raw_geofile='raw_shapes_zip.json'):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         print "Building zip shape files"
 
@@ -152,14 +163,21 @@ class Builder:
                 (zipcode, coordinates) = (m.group(1), m.group(2))
 
                 data = {
-                'id': zipcode,
-                'zipcode': zipcode,
-                'coordinates': coordinates
+                    'id': zipcode,
+                    'zipcode': zipcode,
+                    'coordinates': coordinates
                 }
 
                 out.write(doc_template % data)
 
-    def build_neighborhood_suggestions(self, outfile, neighborhood_geofile):
+    @staticmethod
+    def build_neighborhood_suggestions(outfile, neighborhood_geofile):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+            return
+
+        if not isfile(neighborhood_geofile):
+            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
 
         print "Building neighborhood suggestion files"
 
@@ -181,17 +199,23 @@ class Builder:
                 full_neighborhood = ("%s, %s, %s" % (neighborhood, city, state))
 
                 data = {
-                'id': id,
-                'full_neighborhood': full_neighborhood
+                    'id': id,
+                    'full_neighborhood': full_neighborhood
                 }
 
                 out.write(doc_template % data)
 
-    def build_city_suggestions(self, outfile, city_geofile):
+    @staticmethod
+    def build_city_suggestions(outfile, city_geofile):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+
+        if not isfile(city_geofile):
+            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
 
         print "Building city suggestion files"
 
-        city_re = re.compile('^.*?"state": "([^"]+)", "city": "([^"]+).*')
+        city_re = re.compile('^.*?"state": "([^"]+)", "city": "([^"]+)".*')
 
         doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(city)s, %(state)s","output": "%(city)s, %(state)s","payload": {"type": "city", "id": "%(id)s"}}}\n'
 
@@ -205,11 +229,39 @@ class Builder:
                 city = m.group(2)
 
                 data = {
-                'state': state,
-                'city': city,
-                'id': ("%s_%s" % (city, state)).lower()
+                    'state': state,
+                    'city': city,
+                    'id': ("%s_%s" % (city, state)).lower()
                 }
 
                 out.write(doc_template % data)
 
 
+    @staticmethod
+    def build_zip_suggestions(outfile, zip_geofile):
+        if isfile(outfile):
+            print "%s already exists, skipping building raw geofile" % outfile
+
+        if not isfile(zip_geofile):
+            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
+
+        print "Building zip suggestion files"
+
+        city_re = re.compile('^.*?"zipcode": "([^"]+)".*')
+
+        doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(zip)s", "output": "%(zip)s", "payload": {"type": "zip", "id": "%(id)s"}}}\n'
+
+        with open(outfile, 'a') as out:
+            print "Formatting %s into output file %s" % (zip_geofile, outfile)
+
+            for line in fileinput.input(zip_geofile):
+                m = city_re.match(line)
+
+                zip = m.group(1)
+
+                data = {
+                    'zip': zip,
+                    'id': ("%s" % zip)
+                }
+
+                out.write(doc_template % data)

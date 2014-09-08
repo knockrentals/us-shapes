@@ -47,24 +47,34 @@ def download_shapefiles_from_census(type, outprefix, outdir='shapefiles'):
 
     return outdir
 
+from bs4 import BeautifulSoup
+import requests
 
 def download_neighborhood_shapes(outdir='shapefiles', outprefix='neighborhood'):
-    url_template = 'http://www.zillow.com/static/shp/ZillowNeighborhoods-%s.zip'
+    zillow_neighborhoods_url = 'http://www.zillow.com/howto/api/neighborhood-boundaries.htm'
+    result = requests.get(zillow_neighborhoods_url)
+    soup = BeautifulSoup(result.text)
+    links = [e.get('href') for e in soup.select('.illo-block ul a')]
+
+    url_prefix = 'http://www.zillow.com'
+    state_re = re.compile('-(.*?.zip)$')
 
     if not isdir(outdir):
         mkdir(outdir)
 
     f = urllib.URLopener()
-    for code in state_codes:
-        state = state_codes[code]
+    for link in links:
+        state = state_re.search(link).group(1)
+        filename = '%s/%s%s.zip' % (outdir, outprefix, state)
+
+        if isfile(filename):
+            print "%s already exists. Skipping..." % filename
+            continue
+
         try:
-            filename = '%s/%s%s.zip' % (outdir, outprefix, state)
-            if isfile(filename):
-                print "%s already exists. Skipping..." % filename
-                continue
-            url = url_template % state
+            url = "%s%s" % (url_prefix, link)
             f.retrieve(url, filename)
         except IOError:
-            print "Error retrieving zip file: %s" % (url_template % state)
+            print "Error retrieving zip file: %s" % url
 
     return outdir

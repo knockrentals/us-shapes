@@ -1,47 +1,83 @@
 #!/usr/bin/python
 
-from os.path import isfile, isdir
+from pyes import ES
+
+import sys
+from os.path import isdir
 from os import mkdir, chdir
+from getopt import getopt, GetoptError
+
 from mapper import Mapper
 from indexer import Indexer
-from pyes import ES
 from builder import Builder
-import sys
-import getopt
+from converter import GeoJSONConverter
 
 
 class USShapesRunner():
     def __init__(self, args):
-        host = 'localhost'
-        port = '9200'
+        es_host = 'localhost:9200'
+        ogre_host = 'localhost:3000'
+        batch_size = 100
+        batch_mode = True
+        excludes = []
+        index_shapes = True
+        index_suggestions = True
 
         try:
-            opts, args = getopt.getopt(args, "h:p:")
-        except getopt.GetoptError:
-            print 'run.py -h <host> -p <port>'
+            opts, args = getopt(args, None, ["es-host=", "no-batch", "batch-size=", "excludes=", "no-shapes", "no-suggestions"])
+        except GetoptError:
+            print 'run.py [--es-host=<elasticsearch-host>] [[--no-batch] | [--batch-size=]] [--excludes=<excluded-types>] [--no-shapes] [--no-suggestions]'
+            print """
+                Options:
+                - es-host: the elastic search host to use; default: localhost:9200
+                - ogre-host: the ogre client to use; default: localhost:3000
+                - no-batch: turn off batch mode
+                - batch-size: how large should each batch be; default: 100
+                - excludes: comma-separated list of excluded types; possible types: 'neighborhood', 'city', 'state', 'zip'
+                - no-shapes: skip creation and indexing of shapes
+                - no-suggestions: skip creation and indexing of suggestions
+            """
             sys.exit(2)
         for opt, arg in opts:
-            if opt == '-h':
-                host = arg
-            elif opt == '-p':
-                port = arg
+            if opt == '--es-host':
+                es_host = arg
+            if opt == '--ogre-host':
+                ogre_host = arg
+            elif opt == '--no-batch':
+                batch_mode = False
+            elif opt == '--batch-size':
+                batch_size = arg
+            elif opt == '--excludes':
+                excludes = [a.strip() for a in arg.split(',')]
+            elif opt == '--no-shapes':
+                index_shapes = False
+            elif opt == '--no-suggestions':
+                index_suggestions = False
 
-        eshost = '%s:%s' % (host, port)
-        self.client = ES(eshost)
+        print "Running shapes and suggestions indexing with the following options:"
+        print "* elasticsearch host: %s" % es_host
+        print "* ogre host: %s" % ogre_host
+        print "* batch mode: %s" % batch_mode
+        print "* batch size: %s" % (batch_size if batch_mode else 'n/a')
+        print "* excluded types: %s" % excludes
+        print "* indexing shapes? %s" % index_shapes
+        print "* indexing suggestions? %s" % index_suggestions
 
-        print "Established connection to elasticsearch at %s" % self.client.servers
+        es_client = ES(es_host)
+        mapper = Mapper(es_client)
+        indexer = Indexer(es_client, batch_size=batch_size, batch_mode=batch_mode)
+        converter = GeoJSONConverter(ogre_host=ogre_host)
+        builder = Builder(converter=converter)
 
-        mapper = Mapper(self.client)
-        indexer = Indexer(self.client)
-        builder = Builder()
-
-        self.shapes_index = 'shapes'
-        self.suggest_index = 'suggestions'
+        self.shapes_index = 'shapes_tmp'
+        self.suggest_index = 'suggestions_tmp'
 
         self.initialize_mappings(mapper)
 
-        self.index_shapes(builder, indexer)
-        self.index_suggestions(builder, indexer)
+        if index_shapes:
+            self.index_shapes(builder, indexer, excludes=excludes)
+        if index_suggestions:
+            self.index_suggestions(builder, indexer, excludes=excludes)
 
     def initialize_mappings(self, mapper):
         # Create indices and put mappings
@@ -51,63 +87,59 @@ class USShapesRunner():
         mapper.put_shapes_mappings(index=self.shapes_index)
         mapper.put_suggestions_mappings(index=self.suggest_index)
 
-    def index_shapes(self, builder, indexer):
+    def index_shapes(self, builder, indexer, excludes):
         # Download and format shapefiles, if they don't exist
 
         shapes_dir = 'shapes'
-        neighborhood_shapes_file = 'shapes_neighborhood.json'
-        city_shapes_file = 'shapes_city.json'
-        state_shapes_file = 'shapes_state.json'
-        zip_shapes_file = 'shapes_zip.json'
+        neighborhood_shapes_file = '%s/shapes_neighborhood.json' % shapes_dir
+        city_shapes_file = '%s/shapes_city.json' % shapes_dir
+        state_shapes_file = '%s/shapes_state.json' % shapes_dir
+        zip_shapes_file = '%s/shapes_zip.json' % shapes_dir
 
         if not isdir(shapes_dir):
             mkdir(shapes_dir)
 
-        chdir(shapes_dir)
-
-        if not isfile(neighborhood_shapes_file):
+        if 'neighborhood' not in excludes:
             builder.build_neighborhood_shapes(outfile=neighborhood_shapes_file)
-        if not isfile(city_shapes_file):
+            indexer.bulk_index(self.shapes_index, 'neighborhood', neighborhood_shapes_file)
+        if 'city' not in excludes:
             builder.build_city_shapes(outfile=city_shapes_file)
-        if not isfile(state_shapes_file):
+            indexer.bulk_index(self.shapes_index, 'city', city_shapes_file)
+        if 'state' not in excludes:
             builder.build_state_shapes(outfile=state_shapes_file)
-        if not isfile(zip_shapes_file):
+            indexer.bulk_index(self.shapes_index, 'state', state_shapes_file)
+        if 'zip' not in excludes:
             builder.build_zip_shapes(outfile=zip_shapes_file)
+            indexer.bulk_index(self.shapes_index, 'zip', zip_shapes_file)
 
-        # Index shapes
-        indexer.bulk_index(self.shapes_index, 'neighborhood', neighborhood_shapes_file)
-        indexer.bulk_index(self.shapes_index, 'city', city_shapes_file)
-        indexer.bulk_index(self.shapes_index, 'state', state_shapes_file)
-        indexer.bulk_index(self.shapes_index, 'zip', zip_shapes_file)
-
-        chdir('..')
-
-    def index_suggestions(self, builder, indexer):
+    def index_suggestions(self, builder, indexer, excludes):
         # Generate suggestion files, if they don't exist
 
         suggestions_dir = 'suggestions'
-        neighborhood_suggestions_file = 'suggestions_neighborhood.json'
-        city_suggestions_file = 'suggestions_city.json'
+        neighborhood_suggestions_file = '%s/suggestions_neighborhood.json' % suggestions_dir
+        city_suggestions_file = '%s/suggestions_city.json' % suggestions_dir
+        zip_suggestions_file = '%s/suggestions_zip.json' % suggestions_dir
+
+        shapes_dir = 'shapes'
+        neighborhood_geofile = '%s/shapes_neighborhood.json' % shapes_dir
+        city_geofile = '%s/shapes_city.json' % shapes_dir
+        zip_geofile = '%s/shapes_zip.json' % shapes_dir
 
         if not isdir(suggestions_dir):
             mkdir(suggestions_dir)
 
-        chdir(suggestions_dir)
-
-        if not isfile(neighborhood_suggestions_file):
-            print 'Building neighborhood suggestions file'
-            neighborhood_geofile = '../%s/%s' % (suggestions_dir, neighborhood_suggestions_file)
+        if 'neighborhood' not in excludes:
             builder.build_neighborhood_suggestions(outfile=neighborhood_suggestions_file,
                                                    neighborhood_geofile=neighborhood_geofile)
-        if not isfile(city_suggestions_file):
-            city_geofile = '../%s/%s' % (suggestions_dir, city_suggestions_file)
+            indexer.bulk_index(self.suggest_index, 'neighborhood', neighborhood_suggestions_file)
+
+        if 'city' not in excludes:
             builder.build_city_suggestions(outfile=city_suggestions_file, city_geofile=city_geofile)
+            indexer.bulk_index(self.suggest_index, 'city', city_suggestions_file)
 
-        # Index suggestions
-        indexer.bulk_index(self.suggest_index, 'neighborhood', neighborhood_suggestions_file)
-        indexer.bulk_index(self.suggest_index, 'city', city_suggestions_file)
-
-        chdir('..')
+        if 'zip' not in excludes:
+            builder.build_zip_suggestions(outfile=zip_suggestions_file, zip_geofile=zip_geofile)
+            indexer.bulk_index(self.suggest_index, 'zip', zip_suggestions_file)
 
 
 if __name__ == "__main__":
