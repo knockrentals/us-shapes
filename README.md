@@ -10,7 +10,7 @@ pip install usshapes
 
 # Usage
 ```
-$ run.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions]
+$ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions]
 ```
 
 ## Options:
