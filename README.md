@@ -1,6 +1,12 @@
-U.S. Shapes Indexer
+U.S. Shapes Indexer 0.2.1
 =========
 Retrieve, convert, and index shapefiles (and suggestions based on those files) from census.gov and Zillow
+
+# Install
+Follow the instructions below for non-Python dependencies, then
+```
+pip install usshapes
+```
 
 # Usage
 ```
