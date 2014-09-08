@@ -3,24 +3,26 @@ from urllib2 import Request, urlopen
 from os.path import isdir, isfile
 from os import mkdir
 import urllib
-from utils import state_codes
 import re
+
+from bs4 import BeautifulSoup
+import requests
 
 
 def download_state_shapes(outdir='shapefiles'):
-    return download_shapefiles_from_census(type='STATE', outprefix='state', outdir=outdir)
+    return download_shapefiles_from_census(type='STATE', outdir=outdir, outprefix='state')
 
 
 def download_city_shapes(outdir='shapefiles'):
-    return download_shapefiles_from_census(type='PLACE', outprefix='city', outdir=outdir)
+    return download_shapefiles_from_census(type='PLACE', outdir=outdir, outprefix='city')
 
 
 def download_zip_shapes(outdir='shapefiles'):
-    return download_shapefiles_from_census(type='ZCTA5', outprefix='zip', outdir=outdir)
+    return download_shapefiles_from_census(type='ZCTA5', outdir=outdir, outprefix='zip')
 
 
 # type should be one of PLACE, STATE, or ZCTA5
-def download_shapefiles_from_census(type, outprefix, outdir='shapefiles'):
+def download_shapefiles_from_census(type, outdir, outprefix):
     if not isdir(outdir):
         mkdir(outdir)
 
@@ -47,8 +49,6 @@ def download_shapefiles_from_census(type, outprefix, outdir='shapefiles'):
 
     return outdir
 
-from bs4 import BeautifulSoup
-import requests
 
 def download_neighborhood_shapes(outdir='shapefiles', outprefix='neighborhood'):
     zillow_neighborhoods_url = 'http://www.zillow.com/howto/api/neighborhood-boundaries.htm'

@@ -1,6 +1,8 @@
 *.pyc
 shapes/
 suggestions/
+shapefiles/
+geojson/
 *.iml
 .idea/
 log*

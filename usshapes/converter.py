@@ -7,22 +7,18 @@ from subprocess import check_output
 
 class GeoJSONConverter:
     def __init__(self, ogre_host='localhost:3000'):
-        self.ogre_host=ogre_host
+        self.ogre_host = ogre_host
 
-    def to_geojson(self, raw_geofile, raw_geodir='geojson', shapefile_prefix='', shapefile_ext='zip',
-                   shapefiles_dir='shapefiles'):
-        if not isdir(raw_geodir):
-            mkdir(raw_geodir)
+    def to_geojson(self, outfile, shapefile_prefix='', shapefile_ext='zip', shapefiles_dir='shapefiles'):
 
-        print "Converting files in %s matching %s*.%s into GeoJSON. Results stored in %s/%s" % (
-        shapefiles_dir, shapefile_prefix, shapefile_ext, raw_geodir, raw_geofile)
-        raw_geofilepath = '%s/%s' % (raw_geodir, raw_geofile)
+        print "Converting files in %s matching %s*.%s into GeoJSON. Results stored in %s" % \
+              (shapefiles_dir, shapefile_prefix, shapefile_ext, outfile)
 
-        if isfile(raw_geofilepath):
-            print "%s already exists. Skipping conversion..." % raw_geofilepath
-            return raw_geofilepath
+        if isfile(outfile):
+            print "%s already exists. Skipping conversion..." % outfile
+            return outfile
 
-        with open(raw_geofilepath, 'a') as out:
+        with open(outfile, 'a') as out:
             file_pattern = "%s/%s*.%s" % (shapefiles_dir, shapefile_prefix, shapefile_ext)
             files = glob(file_pattern)
 
@@ -36,5 +32,3 @@ class GeoJSONConverter:
                 except IOError as e:
                     print "Error converting %s" % filename
                     print "I/O error({0}): {1}".format(e.errno, e.strerror)
-
-        return raw_geofilepath

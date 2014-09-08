@@ -1,16 +1,16 @@
 #!/usr/bin/python
 
-from pyes import ES
-
 import sys
 from os.path import isdir
-from os import mkdir, chdir
+from os import mkdir
 from getopt import getopt, GetoptError
 
-from mapper import Mapper
-from indexer import Indexer
-from builder import Builder
-from converter import GeoJSONConverter
+from pyes import ES
+
+from usshapes.mapper import Mapper
+from usshapes.indexer import Indexer
+from usshapes.builder import Builder
+from usshapes.converter import GeoJSONConverter
 
 
 class USShapesRunner():
