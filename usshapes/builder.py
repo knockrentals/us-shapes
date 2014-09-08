@@ -146,7 +146,7 @@ class Builder:
 
         shapefiles_dir = download_zip_shapes()
 
-        raw_geofile = '%s/raw_shapes_state.json' % self.raw_geo_dir
+        raw_geofile = '%s/raw_shapes_zip.json' % self.raw_geo_dir
         self.converter.to_geojson(outfile=raw_geofile, shapefile_prefix='zip', shapefiles_dir=shapefiles_dir)
 
         # Format results

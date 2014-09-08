@@ -1,4 +1,4 @@
-U.S. Shapes Indexer 0.2.1
+U.S. Shapes Indexer
 =========
 Retrieve, convert, and index shapefiles (and suggestions based on those files) from census.gov and Zillow
 

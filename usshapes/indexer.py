@@ -24,6 +24,10 @@ class Indexer:
             # cleanup any lines that contain parentheticals
             line = parens_re.sub('', line).strip()
 
+            # sweet dec/encodings bro
+            line = line.decode('latin-1').encode('utf-8')
+            id = id.decode('latin-1').encode('utf-8')
+
             try:
                 self.client.index(line, index, type, id, bulk=self.batch_mode)
             except UnicodeDecodeError as e:
