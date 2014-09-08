@@ -6,3 +6,4 @@ suggestions/
 log*
 *.egg-info
 env
+dist
