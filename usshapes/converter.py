@@ -1,5 +1,4 @@
-from os.path import isdir, isfile
-from os import mkdir
+from os.path import isfile
 from glob import glob
 from shlex import split
 from subprocess import check_output

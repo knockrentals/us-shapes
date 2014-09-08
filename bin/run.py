@@ -12,7 +12,6 @@ from usshapes.indexer import Indexer
 from usshapes.builder import Builder
 from usshapes.converter import GeoJSONConverter
 
-
 class USShapesRunner():
     def __init__(self, args):
         es_host = 'localhost:9200'

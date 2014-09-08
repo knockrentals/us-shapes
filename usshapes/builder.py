@@ -1,7 +1,7 @@
 import fileinput
 
 from loaders import *
-from src.utils import sanitize, state_codes
+from utils import sanitize, state_codes
 
 
 class Builder:
