@@ -1,10 +1,13 @@
 import fileinput
+import re
+from os.path import isdir, isfile
+from os import mkdir
 
-from loaders import *
+import loader
 from utils import sanitize, state_codes
 
 
-class Builder:
+class Formatter:
     good_line_re = re.compile(r'{\s*"type":\s*"Feature",\s*"properties":\s*')
 
     def __init__(self, converter):
@@ -13,14 +16,14 @@ class Builder:
         if not isdir(self.raw_geo_dir):
             mkdir(self.raw_geo_dir)
 
-    def build_neighborhood_shapes(self, outfile):
+    def format_neighborhood_shapes(self, outfile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         print "Building neighborhood shape files"
 
-        shapefiles_dir = download_neighborhood_shapes()
+        shapefiles_dir = loader.download_neighborhood_shapes()
 
         raw_geofile = '%s/raw_shapes_neighborhood.json' % self.raw_geo_dir
         self.converter.to_geojson(outfile=raw_geofile, shapefile_prefix='neighborhood', shapefiles_dir=shapefiles_dir)
@@ -55,14 +58,14 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    def build_city_shapes(self, outfile):
+    def format_city_shapes(self, outfile):
         if isfile(outfile):
-            print "%s already exists, skipping building geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         print "Building city shape files"
 
-        shapefiles_dir = download_city_shapes()
+        shapefiles_dir = loader.download_city_shapes()
 
         raw_geofile = '%s/raw_shapes_city.json' % self.raw_geo_dir
         self.converter.to_geojson(outfile=raw_geofile, shapefile_prefix='city', shapefiles_dir=shapefiles_dir)
@@ -97,14 +100,14 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    def build_state_shapes(self, outfile):
+    def format_state_shapes(self, outfile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         print "Building state shape files"
 
-        shapefiles_dir = download_state_shapes()
+        shapefiles_dir = loader.download_state_shapes()
 
         raw_geofile = '%s/raw_shapes_state.json' % self.raw_geo_dir
         self.converter.to_geojson(outfile=raw_geofile, shapefile_prefix='state', shapefiles_dir=shapefiles_dir)
@@ -137,14 +140,14 @@ class Builder:
 
                 out.write(doc_template % data)
 
-    def build_zip_shapes(self, outfile):
+    def format_zip_shapes(self, outfile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         print "Building zip shape files"
 
-        shapefiles_dir = download_zip_shapes()
+        shapefiles_dir = loader.download_zip_shapes()
 
         raw_geofile = '%s/raw_shapes_zip.json' % self.raw_geo_dir
         self.converter.to_geojson(outfile=raw_geofile, shapefile_prefix='zip', shapefiles_dir=shapefiles_dir)
@@ -176,13 +179,13 @@ class Builder:
                 out.write(doc_template % data)
 
     @staticmethod
-    def build_neighborhood_suggestions(outfile, neighborhood_geofile):
+    def format_neighborhood_suggestions(outfile, neighborhood_geofile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         if not isfile(neighborhood_geofile):
-            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
+            raise ValueError("a valid GeoJSON file must be supplied to format suggestions")
 
         print "Building neighborhood suggestion files"
 
@@ -211,13 +214,13 @@ class Builder:
                 out.write(doc_template % data)
 
     @staticmethod
-    def build_city_suggestions(outfile, city_geofile):
+    def format_city_suggestions(outfile, city_geofile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         if not isfile(city_geofile):
-            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
+            raise ValueError("a valid GeoJSON file must be supplied to format suggestions")
 
         print "Building city suggestion files"
 
@@ -245,13 +248,13 @@ class Builder:
 
 
     @staticmethod
-    def build_zip_suggestions(outfile, zip_geofile):
+    def format_zip_suggestions(outfile, zip_geofile):
         if isfile(outfile):
-            print "%s already exists, skipping building raw geofile" % outfile
+            print "%s already exists, skipping formatting geofile" % outfile
             return
 
         if not isfile(zip_geofile):
-            raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
+            raise ValueError("a valid GeoJSON file must be supplied to format suggestions")
 
         print "Building zip suggestion files"
 

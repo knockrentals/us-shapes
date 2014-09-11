@@ -2,8 +2,8 @@
 from setuptools import setup
 
 setup(name='usshapes',
-      version='0.5.0',
-      description='U.S. Shapefile Indexer for Elasticsearch',
+      version='0.5.1',
+      description='Create an Elasticsearch index of United States shapefiles, and generate a suggestions index for those locations',
       author='Daniel Sarfati',
       author_email='daniel@knockrentals.com',
       url='https://github.com/fatisar/us-shapes',

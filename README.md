@@ -1,6 +1,6 @@
 U.S. Shapes Indexer
 =========
-Retrieve, convert, and index shapefiles (and suggestions based on those files) from census.gov and Zillow
+Retrieve, convert, and index shapefiles into Elasticsearch, and generate a suggestions index for those locations
 
 # Install
 Follow the instructions below for non-Python dependencies, then
@@ -9,8 +9,10 @@ pip install usshapes
 ```
 
 # Usage
+A runnable module is included that can be used to automate the process of indexing your data. This is the most likely way you want to use this package.
+
 ```
-$ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions]
+$ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions] [--sleep-time]
 ```
 
 ## Options:
@@ -21,6 +23,7 @@ $ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--e
 * excludes: comma-separated list of excluded types; possible types: 'neighborhood', 'city', 'state', 'zip'
 * no-shapes: skip creation and indexing of shapes
 * no-suggestions: skip creation and indexing of suggestions
+* sleep-time: time to sleep between bulk index operations, in seconds; default: 0.1
 
 # Dependencies:
 * [Elasticsearch](http://www.elasticsearch.org)
@@ -64,3 +67,21 @@ Or install globally:
 npm install -g ogre
 ogre -p 3000
 ```
+
+### Gotcha! A note about ogre and Big Files
+Some of the files downloaded from census.gov and zillow.com are Big Files. The zip archive containing the raw zip code shapefiles is half a gigabyte and it expands to a single GeoJSON file weighing in at around 1.5 GB. The ogre client currently does not accept a command line setting for adjusting the timeout used by the underlying ogr2ogr library to convert the shapefpiles to GeoJSON, and it's default timeout is 15 seconds. This is not enough time to convert these files. I've submitted a patch to the author of ogre that would allow setting a timeout, but until then, here's what you need to do:
+
+Go to the ogre installation directory where you're running the ogre client from and open up ```index.js```. In the post route for /convert, there should be the following declaration:
+```
+var ogr = ogr2ogr(req.files.upload.path)
+```
+
+Change that to:
+```
+var ogr = ogr2ogr(req.files.upload.path).timeout(1000000000) # or whatever other suitably large timeout
+```
+
+That should take care of the timeout issues.
+
+# Non-script Usage
+If you elect to not use the script to automate the task (which I still think you should), the best current documentation for how to use the module is still looking at us-shapes.py and seeing how it operates. If there's any demand for proper docs, I'll write them up. Otherwise, I assume you're good.

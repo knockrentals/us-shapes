@@ -1,12 +1,14 @@
 from fileinput import input
 from time import sleep
-from pyes.exceptions import NoServerAvailable
 import re
+
+from pyes import ES
+from pyes.exceptions import NoServerAvailable
 
 
 class Indexer:
-    def __init__(self, client, batch_mode=True, batch_size=100):
-        self.client = client
+    def __init__(self, es_host, batch_mode=True, batch_size=100):
+        self.client = ES(es_host)
         self.batch_mode = batch_mode
         self.client.bulk_size = int(batch_size)
 
