@@ -126,10 +126,10 @@ class Builder:
 
                 m = raw_geo_re.match(line)
 
-                (postal, state, id, coordinates) = (m.group(1), m.group(2), sanitize(m.group(2)), m.group(3))
+                (postal, state, coordinates) = (m.group(1), m.group(2), m.group(3))
 
                 data = {
-                    'id': id,
+                    'id': sanitize(state),
                     'state': state,
                     'postal': postal,
                     'coordinates': coordinates
@@ -186,7 +186,7 @@ class Builder:
 
         print "Building neighborhood suggestion files"
 
-        neighborhood_re = re.compile('^.*?"state":\s*"([^"]+)",\s*"city":\s*"([^"]+)",\s*"neighborhood":\s*"([^"]+)".*')
+        neighborhood_re = re.compile('^.*?"id": "([^"]+)", "state":\s*"([^"]+)",\s*"city":\s*"([^"]+)",\s*"neighborhood":\s*"([^"]+)".*')
 
         doc_template = '{"name" : "%(id)s","suggest" : { "input": "%(full_neighborhood)s", "output": "%(full_neighborhood)s", "payload" : {"type": "neighborhood", "id": "%(id)s"}}}\n'
 
@@ -196,11 +196,11 @@ class Builder:
             for line in fileinput.input(neighborhood_geofile):
                 m = neighborhood_re.match(line)
 
-                state = m.group(1).upper()
-                city = m.group(2)
-                neighborhood = m.group(3)
+                id = m.group(1)
+                state = m.group(2).upper()
+                city = m.group(3)
+                neighborhood = m.group(4)
 
-                id = ("%s_%s_%s" % (neighborhood, city, state)).lower().replace(' ', '_').replace('-', '_')
                 full_neighborhood = ("%s, %s, %s" % (neighborhood, city, state))
 
                 data = {
@@ -214,13 +214,14 @@ class Builder:
     def build_city_suggestions(outfile, city_geofile):
         if isfile(outfile):
             print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         if not isfile(city_geofile):
             raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
 
         print "Building city suggestion files"
 
-        city_re = re.compile('^.*?"state": "([^"]+)", "city": "([^"]+)".*')
+        city_re = re.compile('^.*?"id": "([^"]+)", "state": "([^"]+)", "city": "([^"]+)".*')
 
         doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(city)s, %(state)s","output": "%(city)s, %(state)s","payload": {"type": "city", "id": "%(id)s"}}}\n'
 
@@ -230,13 +231,14 @@ class Builder:
             for line in fileinput.input(city_geofile):
                 m = city_re.match(line)
 
-                state = m.group(1)
-                city = m.group(2)
+                id = m.group(1)
+                state = m.group(2)
+                city = m.group(3)
 
                 data = {
+                    'id': id,
                     'state': state,
-                    'city': city,
-                    'id': ("%s_%s" % (city, state)).lower()
+                    'city': city
                 }
 
                 out.write(doc_template % data)
@@ -246,13 +248,14 @@ class Builder:
     def build_zip_suggestions(outfile, zip_geofile):
         if isfile(outfile):
             print "%s already exists, skipping building raw geofile" % outfile
+            return
 
         if not isfile(zip_geofile):
             raise ValueError("a valid GeoJSON file must be supplied to build suggestions")
 
         print "Building zip suggestion files"
 
-        city_re = re.compile('^.*?"zipcode": "([^"]+)".*')
+        city_re = re.compile('^.*?"id": "([^"]+)", "zipcode": "([^"]+)".*')
 
         doc_template = '{"name" : "%(id)s","suggest" : {"input": "%(zip)s", "output": "%(zip)s", "payload": {"type": "zip", "id": "%(id)s"}}}\n'
 
@@ -262,11 +265,12 @@ class Builder:
             for line in fileinput.input(zip_geofile):
                 m = city_re.match(line)
 
-                zip = m.group(1)
+                id = m.group(1)
+                zipcode = m.group(2)
 
                 data = {
-                    'zip': zip,
-                    'id': ("%s" % zip)
+                    'id': id,
+                    'zip': zipcode
                 }
 
                 out.write(doc_template % data)

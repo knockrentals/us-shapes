@@ -12,6 +12,7 @@ from usshapes.indexer import Indexer
 from usshapes.builder import Builder
 from usshapes.converter import GeoJSONConverter
 
+
 class USShapesRunner():
     def __init__(self, args):
         es_host = 'localhost:9200'
@@ -23,9 +24,9 @@ class USShapesRunner():
         index_suggestions = True
 
         try:
-            opts, args = getopt(args, None, ["es-host=", "no-batch", "batch-size=", "excludes=", "no-shapes", "no-suggestions"])
+            opts, args = getopt(args, None, ["es-host=", "no-batch", "batch-size=", "excludes=", "skip-shapes", "skip-suggestions"])
         except GetoptError:
-            print 'run.py [--es-host=<elasticsearch-host>] [[--no-batch] | [--batch-size=]] [--excludes=<excluded-types>] [--no-shapes] [--no-suggestions]'
+            print 'run.py [--es-host=<elasticsearch-host>] [[--no-batch] | [--batch-size=]] [--excludes=<excluded-types>] [--skip-shapes] [--skip-suggestions]'
             print """
                 Options:
                 - es-host: the elastic search host to use; default: localhost:9200
@@ -33,8 +34,8 @@ class USShapesRunner():
                 - no-batch: turn off batch mode
                 - batch-size: how large should each batch be; default: 100
                 - excludes: comma-separated list of excluded types; possible types: 'neighborhood', 'city', 'state', 'zip'
-                - no-shapes: skip creation and indexing of shapes
-                - no-suggestions: skip creation and indexing of suggestions
+                - skip-shapes: skip creation and indexing of shapes
+                - skip-suggestions: skip creation and indexing of suggestions
             """
             sys.exit(2)
         for opt, arg in opts:
@@ -48,9 +49,9 @@ class USShapesRunner():
                 batch_size = arg
             elif opt == '--excludes':
                 excludes = [a.strip() for a in arg.split(',')]
-            elif opt == '--no-shapes':
+            elif opt == '--skip-shapes':
                 index_shapes = False
-            elif opt == '--no-suggestions':
+            elif opt == '--skip-suggestions':
                 index_suggestions = False
 
         print "Running shapes and suggestions indexing with the following options:"

@@ -1,6 +1,6 @@
 from re import compile
 
-illegals = compile('[ -(.,]')
+illegals = compile('[\s\-\(\).,]')
 
 
 def sanitize(id):

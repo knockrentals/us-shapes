@@ -10,12 +10,12 @@ class GeoJSONConverter:
 
     def to_geojson(self, outfile, shapefile_prefix='', shapefile_ext='zip', shapefiles_dir='shapefiles'):
 
-        print "Converting files in %s matching %s*.%s into GeoJSON. Results stored in %s" % \
-              (shapefiles_dir, shapefile_prefix, shapefile_ext, outfile)
-
         if isfile(outfile):
             print "%s already exists. Skipping conversion..." % outfile
             return outfile
+
+        print "Converting files in %s matching %s*.%s into GeoJSON. Results stored in %s" % \
+              (shapefiles_dir, shapefile_prefix, shapefile_ext, outfile)
 
         with open(outfile, 'a') as out:
             file_pattern = "%s/%s*.%s" % (shapefiles_dir, shapefile_prefix, shapefile_ext)
