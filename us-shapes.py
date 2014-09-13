@@ -82,8 +82,8 @@ class USShapesRunner():
         converter = GeoJSONConverter(ogre_host=ogre_host)
         formatter = Formatter(converter=converter)
 
-        self.shapes_index = 'shapes_three'
-        self.suggest_index = 'suggestions_three'
+        self.shapes_index = 'shapes'
+        self.suggest_index = 'suggestions'
 
         self.initialize_mappings(mapper)
 
@@ -136,7 +136,7 @@ class USShapesRunner():
 
         if 'neighborhood' not in excludes:
             formatter.format_neighborhood_suggestions(outfile=neighborhood_suggestions_file,
-                                                   neighborhood_geofile=neighborhood_geofile)
+                                                      neighborhood_geofile=neighborhood_geofile)
             indexer.bulk_index(self.suggest_index, 'neighborhood', neighborhood_suggestions_file)
 
         if 'city' not in excludes:

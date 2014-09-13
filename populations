@@ -1,0 +1,1490 @@
+{ "update" : {"_id" : "new_york_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":8405837}}}
+{ "update" : {"_id" : "los_angeles_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":3884307}}}
+{ "update" : {"_id" : "chicago_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":2718782}}}
+{ "update" : {"_id" : "houston_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":2195914}}}
+{ "update" : {"_id" : "philadelphia_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":1553165}}}
+{ "update" : {"_id" : "phoenix_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":1513367}}}
+{ "update" : {"_id" : "san_antonio_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":1409019}}}
+{ "update" : {"_id" : "san_diego_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":1355896}}}
+{ "update" : {"_id" : "dallas_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":1257676}}}
+{ "update" : {"_id" : "san_jose_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":998537}}}
+{ "update" : {"_id" : "austin_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":885400}}}
+{ "update" : {"_id" : "indianapolis_city__balance__in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":843393}}}
+{ "update" : {"_id" : "jacksonville_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":842583}}}
+{ "update" : {"_id" : "san_francisco_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":837442}}}
+{ "update" : {"_id" : "columbus_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":822553}}}
+{ "update" : {"_id" : "charlotte_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":792862}}}
+{ "update" : {"_id" : "fort_worth_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":792727}}}
+{ "update" : {"_id" : "detroit_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":688701}}}
+{ "update" : {"_id" : "el_paso_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":674433}}}
+{ "update" : {"_id" : "memphis_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":653450}}}
+{ "update" : {"_id" : "seattle_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":652405}}}
+{ "update" : {"_id" : "denver_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":649495}}}
+{ "update" : {"_id" : "washington_dc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":646449}}}
+{ "update" : {"_id" : "boston_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":645966}}}
+{ "update" : {"_id" : "nashville_davidson_metropolitan_government__balance__tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":634464}}}
+{ "update" : {"_id" : "baltimore_md", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":622104}}}
+{ "update" : {"_id" : "oklahoma_city_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":610613}}}
+{ "update" : {"_id" : "louisville_ky", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":609893}}}
+{ "update" : {"_id" : "portland_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":609456}}}
+{ "update" : {"_id" : "las_vegas_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":603488}}}
+{ "update" : {"_id" : "milwaukee_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":599164}}}
+{ "update" : {"_id" : "albuquerque_nm", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":556495}}}
+{ "update" : {"_id" : "tucson_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":526116}}}
+{ "update" : {"_id" : "fresno_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":509924}}}
+{ "update" : {"_id" : "sacramento_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":479686}}}
+{ "update" : {"_id" : "long_beach_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":469428}}}
+{ "update" : {"_id" : "kansas_city_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":467007}}}
+{ "update" : {"_id" : "mesa_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":457587}}}
+{ "update" : {"_id" : "virginia_beach_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":448479}}}
+{ "update" : {"_id" : "atlanta_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":447841}}}
+{ "update" : {"_id" : "colorado_springs_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":439886}}}
+{ "update" : {"_id" : "omaha_ne", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":434353}}}
+{ "update" : {"_id" : "raleigh_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":431746}}}
+{ "update" : {"_id" : "miami_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":417650}}}
+{ "update" : {"_id" : "oakland_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":406253}}}
+{ "update" : {"_id" : "minneapolis_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":400070}}}
+{ "update" : {"_id" : "tulsa_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":398121}}}
+{ "update" : {"_id" : "cleveland_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":390113}}}
+{ "update" : {"_id" : "wichita_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":386552}}}
+{ "update" : {"_id" : "arlington_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":379577}}}
+{ "update" : {"_id" : "new_orleans_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":378715}}}
+{ "update" : {"_id" : "bakersfield_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":363630}}}
+{ "update" : {"_id" : "tampa_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":352957}}}
+{ "update" : {"_id" : "urban_honolulu_hi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":347884}}}
+{ "update" : {"_id" : "aurora_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":345803}}}
+{ "update" : {"_id" : "anaheim_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":345012}}}
+{ "update" : {"_id" : "santa_ana_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":334227}}}
+{ "update" : {"_id" : "st__louis_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":318416}}}
+{ "update" : {"_id" : "riverside_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":316619}}}
+{ "update" : {"_id" : "corpus_christi_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":316381}}}
+{ "update" : {"_id" : "lexington_fayette_ky", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":308428}}}
+{ "update" : {"_id" : "pittsburgh_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":305841}}}
+{ "update" : {"_id" : "anchorage_ak", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":300950}}}
+{ "update" : {"_id" : "stockton_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":298118}}}
+{ "update" : {"_id" : "cincinnati_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":297517}}}
+{ "update" : {"_id" : "st__paul_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":294873}}}
+{ "update" : {"_id" : "toledo_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":282313}}}
+{ "update" : {"_id" : "greensboro_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":279639}}}
+{ "update" : {"_id" : "newark_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":278427}}}
+{ "update" : {"_id" : "plano_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":274409}}}
+{ "update" : {"_id" : "henderson_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":270811}}}
+{ "update" : {"_id" : "lincoln_ne", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":268738}}}
+{ "update" : {"_id" : "buffalo_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":258959}}}
+{ "update" : {"_id" : "jersey_city_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":257342}}}
+{ "update" : {"_id" : "chula_vista_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":256780}}}
+{ "update" : {"_id" : "fort_wayne_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":256496}}}
+{ "update" : {"_id" : "orlando_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":255483}}}
+{ "update" : {"_id" : "st__petersburg_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":249688}}}
+{ "update" : {"_id" : "chandler_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":249146}}}
+{ "update" : {"_id" : "laredo_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":248142}}}
+{ "update" : {"_id" : "norfolk_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":246139}}}
+{ "update" : {"_id" : "durham_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":245475}}}
+{ "update" : {"_id" : "madison_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":243344}}}
+{ "update" : {"_id" : "lubbock_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":239538}}}
+{ "update" : {"_id" : "irvine_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":236716}}}
+{ "update" : {"_id" : "winston_salem_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":236441}}}
+{ "update" : {"_id" : "glendale_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":234632}}}
+{ "update" : {"_id" : "garland_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":234566}}}
+{ "update" : {"_id" : "hialeah_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":233394}}}
+{ "update" : {"_id" : "reno_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":233294}}}
+{ "update" : {"_id" : "chesapeake_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":230571}}}
+{ "update" : {"_id" : "gilbert_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":229972}}}
+{ "update" : {"_id" : "baton_rouge_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":229426}}}
+{ "update" : {"_id" : "irving_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":228653}}}
+{ "update" : {"_id" : "scottsdale_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":226918}}}
+{ "update" : {"_id" : "north_las_vegas_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":226877}}}
+{ "update" : {"_id" : "fremont_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":224922}}}
+{ "update" : {"_id" : "boise_city_id", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":214237}}}
+{ "update" : {"_id" : "richmond_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":214114}}}
+{ "update" : {"_id" : "san_bernardino_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":213708}}}
+{ "update" : {"_id" : "birmingham_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":212113}}}
+{ "update" : {"_id" : "spokane_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":210721}}}
+{ "update" : {"_id" : "rochester_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":210358}}}
+{ "update" : {"_id" : "des_moines_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":207510}}}
+{ "update" : {"_id" : "modesto_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":204933}}}
+{ "update" : {"_id" : "fayetteville_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":204408}}}
+{ "update" : {"_id" : "tacoma_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":203446}}}
+{ "update" : {"_id" : "oxnard_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":203007}}}
+{ "update" : {"_id" : "fontana_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":203003}}}
+{ "update" : {"_id" : "columbus_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":202824}}}
+{ "update" : {"_id" : "montgomery_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":201332}}}
+{ "update" : {"_id" : "moreno_valley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":201175}}}
+{ "update" : {"_id" : "shreveport_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":200327}}}
+{ "update" : {"_id" : "aurora_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":199963}}}
+{ "update" : {"_id" : "yonkers_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":199766}}}
+{ "update" : {"_id" : "akron_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":198100}}}
+{ "update" : {"_id" : "huntington_beach_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":197575}}}
+{ "update" : {"_id" : "little_rock_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":197357}}}
+{ "update" : {"_id" : "augusta_richmond_county_consolidated_government__balance__ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":197350}}}
+{ "update" : {"_id" : "amarillo_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":196429}}}
+{ "update" : {"_id" : "glendale_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":196021}}}
+{ "update" : {"_id" : "mobile_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":194899}}}
+{ "update" : {"_id" : "grand_rapids_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":192294}}}
+{ "update" : {"_id" : "salt_lake_city_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":191180}}}
+{ "update" : {"_id" : "tallahassee_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":186411}}}
+{ "update" : {"_id" : "huntsville_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":186254}}}
+{ "update" : {"_id" : "grand_prairie_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":183372}}}
+{ "update" : {"_id" : "knoxville_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":183270}}}
+{ "update" : {"_id" : "worcester_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":182544}}}
+{ "update" : {"_id" : "newport_news_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":182020}}}
+{ "update" : {"_id" : "brownsville_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":181860}}}
+{ "update" : {"_id" : "overland_park_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":181260}}}
+{ "update" : {"_id" : "santa_clarita_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":179590}}}
+{ "update" : {"_id" : "providence_ri", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":177994}}}
+{ "update" : {"_id" : "garden_grove_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":175140}}}
+{ "update" : {"_id" : "chattanooga_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":173366}}}
+{ "update" : {"_id" : "oceanside_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":172794}}}
+{ "update" : {"_id" : "jackson_ms", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":172638}}}
+{ "update" : {"_id" : "fort_lauderdale_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":172389}}}
+{ "update" : {"_id" : "santa_rosa_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":171990}}}
+{ "update" : {"_id" : "rancho_cucamonga_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":171386}}}
+{ "update" : {"_id" : "port_st__lucie_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":171016}}}
+{ "update" : {"_id" : "tempe_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":168228}}}
+{ "update" : {"_id" : "ontario_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":167500}}}
+{ "update" : {"_id" : "vancouver_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":167405}}}
+{ "update" : {"_id" : "cape_coral_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":165831}}}
+{ "update" : {"_id" : "sioux_falls_sd", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":164676}}}
+{ "update" : {"_id" : "springfield_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":164122}}}
+{ "update" : {"_id" : "peoria_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":162592}}}
+{ "update" : {"_id" : "pembroke_pines_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":162329}}}
+{ "update" : {"_id" : "elk_grove_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":161007}}}
+{ "update" : {"_id" : "salem_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":160614}}}
+{ "update" : {"_id" : "lancaster_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":159523}}}
+{ "update" : {"_id" : "corona_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":159503}}}
+{ "update" : {"_id" : "eugene_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":159190}}}
+{ "update" : {"_id" : "palmdale_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":157161}}}
+{ "update" : {"_id" : "salinas_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":155662}}}
+{ "update" : {"_id" : "springfield_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":153703}}}
+{ "update" : {"_id" : "pasadena_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":152735}}}
+{ "update" : {"_id" : "fort_collins_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":152061}}}
+{ "update" : {"_id" : "hayward_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":151574}}}
+{ "update" : {"_id" : "pomona_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":151348}}}
+{ "update" : {"_id" : "cary_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":151088}}}
+{ "update" : {"_id" : "rockford_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":150251}}}
+{ "update" : {"_id" : "alexandria_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":148892}}}
+{ "update" : {"_id" : "escondido_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":148738}}}
+{ "update" : {"_id" : "mckinney_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":148559}}}
+{ "update" : {"_id" : "kansas_city_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":148483}}}
+{ "update" : {"_id" : "joliet_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":147806}}}
+{ "update" : {"_id" : "sunnyvale_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":147559}}}
+{ "update" : {"_id" : "torrance_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":147478}}}
+{ "update" : {"_id" : "bridgeport_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":147216}}}
+{ "update" : {"_id" : "lakewood_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":147214}}}
+{ "update" : {"_id" : "hollywood_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":146526}}}
+{ "update" : {"_id" : "paterson_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":145948}}}
+{ "update" : {"_id" : "naperville_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":144864}}}
+{ "update" : {"_id" : "syracuse_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":144669}}}
+{ "update" : {"_id" : "mesquite_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":143484}}}
+{ "update" : {"_id" : "dayton_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":143355}}}
+{ "update" : {"_id" : "savannah_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":142772}}}
+{ "update" : {"_id" : "clarksville_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":142357}}}
+{ "update" : {"_id" : "orange_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":139969}}}
+{ "update" : {"_id" : "pasadena_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":139731}}}
+{ "update" : {"_id" : "fullerton_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":138981}}}
+{ "update" : {"_id" : "killeen_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":137147}}}
+{ "update" : {"_id" : "frisco_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":136791}}}
+{ "update" : {"_id" : "hampton_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":136699}}}
+{ "update" : {"_id" : "mcallen_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":136639}}}
+{ "update" : {"_id" : "warren_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":134873}}}
+{ "update" : {"_id" : "bellevue_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":133992}}}
+{ "update" : {"_id" : "west_valley_city_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":133579}}}
+{ "update" : {"_id" : "columbia_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":133358}}}
+{ "update" : {"_id" : "olathe_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":131885}}}
+{ "update" : {"_id" : "sterling_heights_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":131224}}}
+{ "update" : {"_id" : "new_haven_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":130660}}}
+{ "update" : {"_id" : "miramar_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":130288}}}
+{ "update" : {"_id" : "waco_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":129030}}}
+{ "update" : {"_id" : "thousand_oaks_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":128731}}}
+{ "update" : {"_id" : "cedar_rapids_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":128429}}}
+{ "update" : {"_id" : "charleston_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127999}}}
+{ "update" : {"_id" : "visalia_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127763}}}
+{ "update" : {"_id" : "topeka_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127679}}}
+{ "update" : {"_id" : "elizabeth_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127558}}}
+{ "update" : {"_id" : "gainesville_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127488}}}
+{ "update" : {"_id" : "thornton_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127359}}}
+{ "update" : {"_id" : "roseville_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":127035}}}
+{ "update" : {"_id" : "carrollton_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":126700}}}
+{ "update" : {"_id" : "coral_springs_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":126604}}}
+{ "update" : {"_id" : "stamford_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":126456}}}
+{ "update" : {"_id" : "simi_valley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":126181}}}
+{ "update" : {"_id" : "concord_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":125880}}}
+{ "update" : {"_id" : "hartford_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":125017}}}
+{ "update" : {"_id" : "kent_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":124435}}}
+{ "update" : {"_id" : "lafayette_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":124276}}}
+{ "update" : {"_id" : "midland_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":123933}}}
+{ "update" : {"_id" : "surprise_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":123546}}}
+{ "update" : {"_id" : "denton_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":123099}}}
+{ "update" : {"_id" : "victorville_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":121096}}}
+{ "update" : {"_id" : "evansville_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":120310}}}
+{ "update" : {"_id" : "santa_clara_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":120245}}}
+{ "update" : {"_id" : "abilene_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":120099}}}
+{ "update" : {"_id" : "athens_clarke_county_unified_government__balance__ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":119980}}}
+{ "update" : {"_id" : "vallejo_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":118837}}}
+{ "update" : {"_id" : "allentown_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":118577}}}
+{ "update" : {"_id" : "norman_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":118197}}}
+{ "update" : {"_id" : "beaumont_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":117796}}}
+{ "update" : {"_id" : "independence_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":117240}}}
+{ "update" : {"_id" : "murfreesboro_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":117044}}}
+{ "update" : {"_id" : "ann_arbor_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":117025}}}
+{ "update" : {"_id" : "springfield_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":117006}}}
+{ "update" : {"_id" : "berkeley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":116768}}}
+{ "update" : {"_id" : "peoria_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":116513}}}
+{ "update" : {"_id" : "provo_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":116288}}}
+{ "update" : {"_id" : "el_monte_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":115708}}}
+{ "update" : {"_id" : "columbia_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":115276}}}
+{ "update" : {"_id" : "lansing_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":113972}}}
+{ "update" : {"_id" : "fargo_nd", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":113658}}}
+{ "update" : {"_id" : "downey_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":113242}}}
+{ "update" : {"_id" : "costa_mesa_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":112174}}}
+{ "update" : {"_id" : "wilmington_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":112067}}}
+{ "update" : {"_id" : "arvada_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":111707}}}
+{ "update" : {"_id" : "inglewood_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":111542}}}
+{ "update" : {"_id" : "miami_gardens_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":111378}}}
+{ "update" : {"_id" : "carlsbad_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110972}}}
+{ "update" : {"_id" : "westminster_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110945}}}
+{ "update" : {"_id" : "rochester_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110742}}}
+{ "update" : {"_id" : "odessa_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110720}}}
+{ "update" : {"_id" : "manchester_nh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110378}}}
+{ "update" : {"_id" : "elgin_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110145}}}
+{ "update" : {"_id" : "west_jordan_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":110077}}}
+{ "update" : {"_id" : "round_rock_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109821}}}
+{ "update" : {"_id" : "clearwater_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109703}}}
+{ "update" : {"_id" : "waterbury_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109676}}}
+{ "update" : {"_id" : "gresham_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109397}}}
+{ "update" : {"_id" : "fairfield_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109320}}}
+{ "update" : {"_id" : "billings_mt", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":109059}}}
+{ "update" : {"_id" : "lowell_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":108861}}}
+{ "update" : {"_id" : "san_buenaventura__ventura__ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":108817}}}
+{ "update" : {"_id" : "pueblo_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":108249}}}
+{ "update" : {"_id" : "high_point_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107741}}}
+{ "update" : {"_id" : "west_covina_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107740}}}
+{ "update" : {"_id" : "richmond_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107571}}}
+{ "update" : {"_id" : "murrieta_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107479}}}
+{ "update" : {"_id" : "cambridge_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107289}}}
+{ "update" : {"_id" : "antioch_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":107100}}}
+{ "update" : {"_id" : "temecula_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":106780}}}
+{ "update" : {"_id" : "norwalk_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":106589}}}
+{ "update" : {"_id" : "centennial_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":106114}}}
+{ "update" : {"_id" : "everett_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":105370}}}
+{ "update" : {"_id" : "palm_bay_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104898}}}
+{ "update" : {"_id" : "wichita_falls_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104898}}}
+{ "update" : {"_id" : "green_bay_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104779}}}
+{ "update" : {"_id" : "daly_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104739}}}
+{ "update" : {"_id" : "burbank_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104709}}}
+{ "update" : {"_id" : "richardson_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104475}}}
+{ "update" : {"_id" : "pompano_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104410}}}
+{ "update" : {"_id" : "north_charleston_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":104054}}}
+{ "update" : {"_id" : "broken_arrow_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":103500}}}
+{ "update" : {"_id" : "boulder_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":103166}}}
+{ "update" : {"_id" : "west_palm_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":102436}}}
+{ "update" : {"_id" : "santa_maria_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":102216}}}
+{ "update" : {"_id" : "el_cajon_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":102211}}}
+{ "update" : {"_id" : "davenport_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":102157}}}
+{ "update" : {"_id" : "rialto_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":101910}}}
+{ "update" : {"_id" : "las_cruces_nm", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":101324}}}
+{ "update" : {"_id" : "san_mateo_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":101128}}}
+{ "update" : {"_id" : "lewisville_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":101074}}}
+{ "update" : {"_id" : "south_bend_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100886}}}
+{ "update" : {"_id" : "lakeland_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100710}}}
+{ "update" : {"_id" : "erie_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100671}}}
+{ "update" : {"_id" : "tyler_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100223}}}
+{ "update" : {"_id" : "pearland_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100065}}}
+{ "update" : {"_id" : "college_station_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":100050}}}
+{ "update" : {"_id" : "kenosha_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":99889}}}
+{ "update" : {"_id" : "sandy_springs_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":99770}}}
+{ "update" : {"_id" : "clovis_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":99769}}}
+{ "update" : {"_id" : "flint_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":99763}}}
+{ "update" : {"_id" : "roanoke_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":98465}}}
+{ "update" : {"_id" : "albany_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":98424}}}
+{ "update" : {"_id" : "jurupa_valley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":98030}}}
+{ "update" : {"_id" : "compton_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":97877}}}
+{ "update" : {"_id" : "san_angelo_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":97492}}}
+{ "update" : {"_id" : "hillsboro_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":97368}}}
+{ "update" : {"_id" : "lawton_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":97151}}}
+{ "update" : {"_id" : "renton_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":97003}}}
+{ "update" : {"_id" : "vista_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":96929}}}
+{ "update" : {"_id" : "davie_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":96830}}}
+{ "update" : {"_id" : "greeley_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":96539}}}
+{ "update" : {"_id" : "mission_viejo_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":96346}}}
+{ "update" : {"_id" : "portsmouth_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":96205}}}
+{ "update" : {"_id" : "dearborn_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":95884}}}
+{ "update" : {"_id" : "south_gate_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":95677}}}
+{ "update" : {"_id" : "tuscaloosa_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":95334}}}
+{ "update" : {"_id" : "livonia_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":95208}}}
+{ "update" : {"_id" : "new_bedford_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":95078}}}
+{ "update" : {"_id" : "vacaville_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":94275}}}
+{ "update" : {"_id" : "brockton_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":94089}}}
+{ "update" : {"_id" : "roswell_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":94034}}}
+{ "update" : {"_id" : "beaverton_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":93542}}}
+{ "update" : {"_id" : "quincy_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":93494}}}
+{ "update" : {"_id" : "sparks_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":93282}}}
+{ "update" : {"_id" : "yakima_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":93257}}}
+{ "update" : {"_id" : "lee's_summit_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":93184}}}
+{ "update" : {"_id" : "federal_way_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":92734}}}
+{ "update" : {"_id" : "carson_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":92599}}}
+{ "update" : {"_id" : "santa_monica_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":92472}}}
+{ "update" : {"_id" : "hesperia_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":92147}}}
+{ "update" : {"_id" : "allen_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":92020}}}
+{ "update" : {"_id" : "rio_rancho_nm", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91956}}}
+{ "update" : {"_id" : "yuma_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91923}}}
+{ "update" : {"_id" : "westminster_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91739}}}
+{ "update" : {"_id" : "orem_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91648}}}
+{ "update" : {"_id" : "lynn_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91589}}}
+{ "update" : {"_id" : "redding_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91119}}}
+{ "update" : {"_id" : "spokane_valley_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91113}}}
+{ "update" : {"_id" : "miami_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":91026}}}
+{ "update" : {"_id" : "league_city_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90983}}}
+{ "update" : {"_id" : "lawrence_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90811}}}
+{ "update" : {"_id" : "santa_barbara_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90412}}}
+{ "update" : {"_id" : "plantation_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90268}}}
+{ "update" : {"_id" : "sandy_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90231}}}
+{ "update" : {"_id" : "sunrise_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":90116}}}
+{ "update" : {"_id" : "macon_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":89981}}}
+{ "update" : {"_id" : "longmont_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":89919}}}
+{ "update" : {"_id" : "boca_raton_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":89407}}}
+{ "update" : {"_id" : "san_marcos_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":89387}}}
+{ "update" : {"_id" : "greenville_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":89130}}}
+{ "update" : {"_id" : "waukegan_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":88826}}}
+{ "update" : {"_id" : "fall_river_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":88697}}}
+{ "update" : {"_id" : "chico_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":88077}}}
+{ "update" : {"_id" : "newton_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87971}}}
+{ "update" : {"_id" : "san_leandro_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87965}}}
+{ "update" : {"_id" : "reading_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87893}}}
+{ "update" : {"_id" : "norwalk_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87776}}}
+{ "update" : {"_id" : "fort_smith_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87650}}}
+{ "update" : {"_id" : "newport_beach_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87273}}}
+{ "update" : {"_id" : "asheville_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87236}}}
+{ "update" : {"_id" : "nashua_nh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87137}}}
+{ "update" : {"_id" : "edmond_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":87004}}}
+{ "update" : {"_id" : "whittier_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86635}}}
+{ "update" : {"_id" : "nampa_id", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86518}}}
+{ "update" : {"_id" : "bloomington_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86319}}}
+{ "update" : {"_id" : "deltona_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86290}}}
+{ "update" : {"_id" : "hawthorne_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86199}}}
+{ "update" : {"_id" : "duluth_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":86128}}}
+{ "update" : {"_id" : "carmel_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":85927}}}
+{ "update" : {"_id" : "suffolk_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":85728}}}
+{ "update" : {"_id" : "clifton_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":85390}}}
+{ "update" : {"_id" : "citrus_heights_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":85285}}}
+{ "update" : {"_id" : "livermore_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":85156}}}
+{ "update" : {"_id" : "tracy_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84691}}}
+{ "update" : {"_id" : "alhambra_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84577}}}
+{ "update" : {"_id" : "kirkland_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84430}}}
+{ "update" : {"_id" : "trenton_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84349}}}
+{ "update" : {"_id" : "ogden_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84249}}}
+{ "update" : {"_id" : "hoover_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84126}}}
+{ "update" : {"_id" : "cicero_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":84103}}}
+{ "update" : {"_id" : "fishers_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83891}}}
+{ "update" : {"_id" : "sugar_land_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83860}}}
+{ "update" : {"_id" : "danbury_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83684}}}
+{ "update" : {"_id" : "meridian_id", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83596}}}
+{ "update" : {"_id" : "indio_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83539}}}
+{ "update" : {"_id" : "concord_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83506}}}
+{ "update" : {"_id" : "menifee_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83447}}}
+{ "update" : {"_id" : "champaign_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":83424}}}
+{ "update" : {"_id" : "buena_park_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82882}}}
+{ "update" : {"_id" : "troy_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82821}}}
+{ "update" : {"_id" : "o'fallon_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82809}}}
+{ "update" : {"_id" : "johns_creek_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82788}}}
+{ "update" : {"_id" : "bellingham_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82631}}}
+{ "update" : {"_id" : "westland_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82578}}}
+{ "update" : {"_id" : "bloomington_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82575}}}
+{ "update" : {"_id" : "sioux_city_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":82459}}}
+{ "update" : {"_id" : "warwick_ri", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81971}}}
+{ "update" : {"_id" : "hemet_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81750}}}
+{ "update" : {"_id" : "longview_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81443}}}
+{ "update" : {"_id" : "farmington_hills_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81295}}}
+{ "update" : {"_id" : "bend_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81236}}}
+{ "update" : {"_id" : "lakewood_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81121}}}
+{ "update" : {"_id" : "merced_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81102}}}
+{ "update" : {"_id" : "mission_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":81050}}}
+{ "update" : {"_id" : "chino_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":80988}}}
+{ "update" : {"_id" : "redwood_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":80872}}}
+{ "update" : {"_id" : "edinburg_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":80836}}}
+{ "update" : {"_id" : "cranston_ri", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":80566}}}
+{ "update" : {"_id" : "parma_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":80429}}}
+{ "update" : {"_id" : "new_rochelle_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":79446}}}
+{ "update" : {"_id" : "lake_forest_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":79312}}}
+{ "update" : {"_id" : "napa_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":79068}}}
+{ "update" : {"_id" : "hammond_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78967}}}
+{ "update" : {"_id" : "fayetteville_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78960}}}
+{ "update" : {"_id" : "bloomington_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78902}}}
+{ "update" : {"_id" : "avondale_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78822}}}
+{ "update" : {"_id" : "somerville_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78804}}}
+{ "update" : {"_id" : "palm_coast_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78740}}}
+{ "update" : {"_id" : "bryan_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78709}}}
+{ "update" : {"_id" : "gary_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78450}}}
+{ "update" : {"_id" : "largo_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78409}}}
+{ "update" : {"_id" : "brooklyn_park_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78373}}}
+{ "update" : {"_id" : "tustin_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78327}}}
+{ "update" : {"_id" : "racine_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78199}}}
+{ "update" : {"_id" : "deerfield_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78041}}}
+{ "update" : {"_id" : "lynchburg_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":78014}}}
+{ "update" : {"_id" : "mountain_view_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77846}}}
+{ "update" : {"_id" : "medford_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77677}}}
+{ "update" : {"_id" : "lawrence_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77657}}}
+{ "update" : {"_id" : "bellflower_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77593}}}
+{ "update" : {"_id" : "melbourne_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77508}}}
+{ "update" : {"_id" : "st__joseph_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":77147}}}
+{ "update" : {"_id" : "camden_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76903}}}
+{ "update" : {"_id" : "st__george_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76817}}}
+{ "update" : {"_id" : "kennewick_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76762}}}
+{ "update" : {"_id" : "baldwin_park_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76635}}}
+{ "update" : {"_id" : "chino_hills_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76572}}}
+{ "update" : {"_id" : "alameda_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76419}}}
+{ "update" : {"_id" : "albany_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":76185}}}
+{ "update" : {"_id" : "arlington_heights_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75994}}}
+{ "update" : {"_id" : "scranton_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75806}}}
+{ "update" : {"_id" : "evanston_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75570}}}
+{ "update" : {"_id" : "kalamazoo_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75548}}}
+{ "update" : {"_id" : "baytown_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75418}}}
+{ "update" : {"_id" : "upland_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75413}}}
+{ "update" : {"_id" : "springdale_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75229}}}
+{ "update" : {"_id" : "bethlehem_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":75018}}}
+{ "update" : {"_id" : "schaumburg_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74907}}}
+{ "update" : {"_id" : "mount_pleasant_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74885}}}
+{ "update" : {"_id" : "auburn_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74860}}}
+{ "update" : {"_id" : "decatur_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74710}}}
+{ "update" : {"_id" : "san_ramon_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74513}}}
+{ "update" : {"_id" : "pleasanton_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74110}}}
+{ "update" : {"_id" : "wyoming_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74100}}}
+{ "update" : {"_id" : "lake_charles_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":74024}}}
+{ "update" : {"_id" : "plymouth_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73987}}}
+{ "update" : {"_id" : "bolingbrook_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73936}}}
+{ "update" : {"_id" : "pharr_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73790}}}
+{ "update" : {"_id" : "appleton_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73596}}}
+{ "update" : {"_id" : "gastonia_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73209}}}
+{ "update" : {"_id" : "folsom_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73098}}}
+{ "update" : {"_id" : "southfield_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":73006}}}
+{ "update" : {"_id" : "rochester_hills_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72952}}}
+{ "update" : {"_id" : "new_britain_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72939}}}
+{ "update" : {"_id" : "goodyear_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72864}}}
+{ "update" : {"_id" : "canton_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72535}}}
+{ "update" : {"_id" : "warner_robins_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72531}}}
+{ "update" : {"_id" : "union_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72528}}}
+{ "update" : {"_id" : "perris_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":72326}}}
+{ "update" : {"_id" : "manteca_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71948}}}
+{ "update" : {"_id" : "iowa_city_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71591}}}
+{ "update" : {"_id" : "jonesboro_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71551}}}
+{ "update" : {"_id" : "wilmington_de", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71525}}}
+{ "update" : {"_id" : "lynwood_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71371}}}
+{ "update" : {"_id" : "loveland_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71334}}}
+{ "update" : {"_id" : "pawtucket_ri", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71172}}}
+{ "update" : {"_id" : "boynton_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71097}}}
+{ "update" : {"_id" : "waukesha_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71016}}}
+{ "update" : {"_id" : "gulfport_ms", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":71012}}}
+{ "update" : {"_id" : "apple_valley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70924}}}
+{ "update" : {"_id" : "passaic_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70868}}}
+{ "update" : {"_id" : "rapid_city_sd", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70812}}}
+{ "update" : {"_id" : "layton_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70790}}}
+{ "update" : {"_id" : "lafayette_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70373}}}
+{ "update" : {"_id" : "turlock_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70365}}}
+{ "update" : {"_id" : "muncie_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70316}}}
+{ "update" : {"_id" : "temple_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70190}}}
+{ "update" : {"_id" : "missouri_city_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":70185}}}
+{ "update" : {"_id" : "redlands_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69999}}}
+{ "update" : {"_id" : "santa_fe_nm", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69976}}}
+{ "update" : {"_id" : "lauderhill_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69813}}}
+{ "update" : {"_id" : "milpitas_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69783}}}
+{ "update" : {"_id" : "palatine_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69350}}}
+{ "update" : {"_id" : "missoula_mt", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69122}}}
+{ "update" : {"_id" : "rock_hill_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69103}}}
+{ "update" : {"_id" : "jacksonville_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":69079}}}
+{ "update" : {"_id" : "franklin_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68886}}}
+{ "update" : {"_id" : "flagstaff_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68667}}}
+{ "update" : {"_id" : "flower_mound_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68609}}}
+{ "update" : {"_id" : "weston_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68388}}}
+{ "update" : {"_id" : "waterloo_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68366}}}
+{ "update" : {"_id" : "union_city_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68247}}}
+{ "update" : {"_id" : "mount_vernon_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68224}}}
+{ "update" : {"_id" : "fort_myers_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68190}}}
+{ "update" : {"_id" : "dothan_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":68001}}}
+{ "update" : {"_id" : "rancho_cordova_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67911}}}
+{ "update" : {"_id" : "redondo_beach_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67815}}}
+{ "update" : {"_id" : "jackson_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67685}}}
+{ "update" : {"_id" : "pasco_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67599}}}
+{ "update" : {"_id" : "st__charles_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67569}}}
+{ "update" : {"_id" : "eau_claire_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67545}}}
+{ "update" : {"_id" : "north_richland_hills_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67317}}}
+{ "update" : {"_id" : "bismarck_nd", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67034}}}
+{ "update" : {"_id" : "yorba_linda_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":67032}}}
+{ "update" : {"_id" : "kenner_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66975}}}
+{ "update" : {"_id" : "walnut_creek_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66900}}}
+{ "update" : {"_id" : "frederick_md", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66893}}}
+{ "update" : {"_id" : "oshkosh_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66778}}}
+{ "update" : {"_id" : "pittsburg_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66695}}}
+{ "update" : {"_id" : "palo_alto_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66642}}}
+{ "update" : {"_id" : "bossier_city_la", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66333}}}
+{ "update" : {"_id" : "portland_me", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66318}}}
+{ "update" : {"_id" : "st__cloud_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66297}}}
+{ "update" : {"_id" : "davis_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66205}}}
+{ "update" : {"_id" : "south_san_francisco_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66174}}}
+{ "update" : {"_id" : "camarillo_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66086}}}
+{ "update" : {"_id" : "north_little_rock_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":66075}}}
+{ "update" : {"_id" : "schenectady_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65902}}}
+{ "update" : {"_id" : "gaithersburg_md", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65690}}}
+{ "update" : {"_id" : "harlingen_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65665}}}
+{ "update" : {"_id" : "woodbury_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65656}}}
+{ "update" : {"_id" : "eagan_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65453}}}
+{ "update" : {"_id" : "yuba_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65416}}}
+{ "update" : {"_id" : "maple_grove_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65415}}}
+{ "update" : {"_id" : "youngstown_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65184}}}
+{ "update" : {"_id" : "skokie_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65176}}}
+{ "update" : {"_id" : "kissimmee_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65173}}}
+{ "update" : {"_id" : "johnson_city_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65123}}}
+{ "update" : {"_id" : "victoria_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65098}}}
+{ "update" : {"_id" : "san_clemente_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65040}}}
+{ "update" : {"_id" : "bayonne_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":65028}}}
+{ "update" : {"_id" : "laguna_niguel_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64652}}}
+{ "update" : {"_id" : "east_orange_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64544}}}
+{ "update" : {"_id" : "shawnee_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64323}}}
+{ "update" : {"_id" : "homestead_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64079}}}
+{ "update" : {"_id" : "delray_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64072}}}
+{ "update" : {"_id" : "rockville_md", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":64072}}}
+{ "update" : {"_id" : "janesville_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63820}}}
+{ "update" : {"_id" : "conway_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63816}}}
+{ "update" : {"_id" : "pico_rivera_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63771}}}
+{ "update" : {"_id" : "lorain_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63710}}}
+{ "update" : {"_id" : "montebello_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63495}}}
+{ "update" : {"_id" : "lodi_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63338}}}
+{ "update" : {"_id" : "new_braunfels_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63279}}}
+{ "update" : {"_id" : "marysville_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63269}}}
+{ "update" : {"_id" : "tamarac_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63155}}}
+{ "update" : {"_id" : "madera_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63105}}}
+{ "update" : {"_id" : "conroe_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":63032}}}
+{ "update" : {"_id" : "santa_cruz_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62864}}}
+{ "update" : {"_id" : "eden_prairie_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62603}}}
+{ "update" : {"_id" : "cheyenne_wy", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62448}}}
+{ "update" : {"_id" : "daytona_beach_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62316}}}
+{ "update" : {"_id" : "alpharetta_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62298}}}
+{ "update" : {"_id" : "hamilton_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62258}}}
+{ "update" : {"_id" : "waltham_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62227}}}
+{ "update" : {"_id" : "coon_rapids_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62103}}}
+{ "update" : {"_id" : "haverhill_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":62088}}}
+{ "update" : {"_id" : "council_bluffs_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61969}}}
+{ "update" : {"_id" : "taylor_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61817}}}
+{ "update" : {"_id" : "utica_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61808}}}
+{ "update" : {"_id" : "ames_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61792}}}
+{ "update" : {"_id" : "la_habra_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61653}}}
+{ "update" : {"_id" : "encinitas_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61588}}}
+{ "update" : {"_id" : "bowling_green_ky", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61488}}}
+{ "update" : {"_id" : "burnsville_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61434}}}
+{ "update" : {"_id" : "greenville_sc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61397}}}
+{ "update" : {"_id" : "west_des_moines_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61255}}}
+{ "update" : {"_id" : "cedar_park_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61238}}}
+{ "update" : {"_id" : "tulare_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61170}}}
+{ "update" : {"_id" : "monterey_park_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61085}}}
+{ "update" : {"_id" : "vineland_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61050}}}
+{ "update" : {"_id" : "terre_haute_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61025}}}
+{ "update" : {"_id" : "north_miami_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":61007}}}
+{ "update" : {"_id" : "mansfield_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60872}}}
+{ "update" : {"_id" : "west_allis_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60697}}}
+{ "update" : {"_id" : "bristol_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60568}}}
+{ "update" : {"_id" : "taylorsville_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60519}}}
+{ "update" : {"_id" : "malden_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60509}}}
+{ "update" : {"_id" : "meriden_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60456}}}
+{ "update" : {"_id" : "blaine_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60407}}}
+{ "update" : {"_id" : "wellington_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60202}}}
+{ "update" : {"_id" : "cupertino_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60189}}}
+{ "update" : {"_id" : "springfield_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60177}}}
+{ "update" : {"_id" : "rogers_ar", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60112}}}
+{ "update" : {"_id" : "st__clair_shores_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":60070}}}
+{ "update" : {"_id" : "gardena_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59957}}}
+{ "update" : {"_id" : "pontiac_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59887}}}
+{ "update" : {"_id" : "national_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59834}}}
+{ "update" : {"_id" : "grand_junction_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59778}}}
+{ "update" : {"_id" : "rocklin_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59738}}}
+{ "update" : {"_id" : "chapel_hill_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59635}}}
+{ "update" : {"_id" : "casper_wy", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59628}}}
+{ "update" : {"_id" : "broomfield_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59471}}}
+{ "update" : {"_id" : "petaluma_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59440}}}
+{ "update" : {"_id" : "south_jordan_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59366}}}
+{ "update" : {"_id" : "springfield_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59357}}}
+{ "update" : {"_id" : "great_falls_mt", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59351}}}
+{ "update" : {"_id" : "lancaster_pa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59325}}}
+{ "update" : {"_id" : "north_port_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59212}}}
+{ "update" : {"_id" : "lakewood_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59097}}}
+{ "update" : {"_id" : "marietta_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":59089}}}
+{ "update" : {"_id" : "san_rafael_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58994}}}
+{ "update" : {"_id" : "royal_oak_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58946}}}
+{ "update" : {"_id" : "des_plaines_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58918}}}
+{ "update" : {"_id" : "huntington_park_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58879}}}
+{ "update" : {"_id" : "la_mesa_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58642}}}
+{ "update" : {"_id" : "orland_park_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58590}}}
+{ "update" : {"_id" : "auburn_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58582}}}
+{ "update" : {"_id" : "lakeville_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58562}}}
+{ "update" : {"_id" : "owensboro_ky", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58416}}}
+{ "update" : {"_id" : "moore_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58414}}}
+{ "update" : {"_id" : "jupiter_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58298}}}
+{ "update" : {"_id" : "idaho_falls_id", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58292}}}
+{ "update" : {"_id" : "dubuque_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58253}}}
+{ "update" : {"_id" : "bartlett_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58226}}}
+{ "update" : {"_id" : "rowlett_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":58043}}}
+{ "update" : {"_id" : "novi_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57960}}}
+{ "update" : {"_id" : "white_plains_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57866}}}
+{ "update" : {"_id" : "arcadia_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57639}}}
+{ "update" : {"_id" : "redmond_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57530}}}
+{ "update" : {"_id" : "lake_elsinore_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57525}}}
+{ "update" : {"_id" : "ocala_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57468}}}
+{ "update" : {"_id" : "tinley_park_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57282}}}
+{ "update" : {"_id" : "port_orange_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57203}}}
+{ "update" : {"_id" : "medford_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57170}}}
+{ "update" : {"_id" : "oak_lawn_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":57073}}}
+{ "update" : {"_id" : "rocky_mount_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56954}}}
+{ "update" : {"_id" : "kokomo_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56895}}}
+{ "update" : {"_id" : "coconut_creek_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56792}}}
+{ "update" : {"_id" : "bowie_md", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56759}}}
+{ "update" : {"_id" : "berwyn_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56758}}}
+{ "update" : {"_id" : "midwest_city_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56756}}}
+{ "update" : {"_id" : "fountain_valley_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56707}}}
+{ "update" : {"_id" : "buckeye_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56683}}}
+{ "update" : {"_id" : "dearborn_heights_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56620}}}
+{ "update" : {"_id" : "woodland_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56590}}}
+{ "update" : {"_id" : "noblesville_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56540}}}
+{ "update" : {"_id" : "valdosta_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56481}}}
+{ "update" : {"_id" : "diamond_bar_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56449}}}
+{ "update" : {"_id" : "manhattan_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56143}}}
+{ "update" : {"_id" : "santee_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56105}}}
+{ "update" : {"_id" : "taunton_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56069}}}
+{ "update" : {"_id" : "sanford_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":56002}}}
+{ "update" : {"_id" : "kettering_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55870}}}
+{ "update" : {"_id" : "new_brunswick_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55831}}}
+{ "update" : {"_id" : "decatur_al", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55816}}}
+{ "update" : {"_id" : "chicopee_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55717}}}
+{ "update" : {"_id" : "anderson_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55670}}}
+{ "update" : {"_id" : "margate_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55456}}}
+{ "update" : {"_id" : "weymouth_town_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55419}}}
+{ "update" : {"_id" : "hempstead_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55361}}}
+{ "update" : {"_id" : "corvallis_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55298}}}
+{ "update" : {"_id" : "eastvale_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55191}}}
+{ "update" : {"_id" : "porterville_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55174}}}
+{ "update" : {"_id" : "west_haven_ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55046}}}
+{ "update" : {"_id" : "brentwood_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":55000}}}
+{ "update" : {"_id" : "paramount_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54980}}}
+{ "update" : {"_id" : "grand_forks_nd", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54932}}}
+{ "update" : {"_id" : "georgetown_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54898}}}
+{ "update" : {"_id" : "st__peters_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54842}}}
+{ "update" : {"_id" : "shoreline_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54790}}}
+{ "update" : {"_id" : "mount_prospect_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54771}}}
+{ "update" : {"_id" : "hanford_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54686}}}
+{ "update" : {"_id" : "normal_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54664}}}
+{ "update" : {"_id" : "rosemead_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54561}}}
+{ "update" : {"_id" : "lehi_ut", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54382}}}
+{ "update" : {"_id" : "pocatello_id", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54350}}}
+{ "update" : {"_id" : "highland_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54291}}}
+{ "update" : {"_id" : "novato_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54194}}}
+{ "update" : {"_id" : "port_arthur_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54135}}}
+{ "update" : {"_id" : "carson_city_nv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54080}}}
+{ "update" : {"_id" : "san_marcos_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54076}}}
+{ "update" : {"_id" : "hendersonville_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":54068}}}
+{ "update" : {"_id" : "elyria_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53956}}}
+{ "update" : {"_id" : "revere_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53756}}}
+{ "update" : {"_id" : "pflugerville_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53752}}}
+{ "update" : {"_id" : "greenwood_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53665}}}
+{ "update" : {"_id" : "bellevue_ne", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53663}}}
+{ "update" : {"_id" : "wheaton_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53648}}}
+{ "update" : {"_id" : "smyrna_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53438}}}
+{ "update" : {"_id" : "sarasota_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53326}}}
+{ "update" : {"_id" : "blue_springs_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53294}}}
+{ "update" : {"_id" : "colton_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53243}}}
+{ "update" : {"_id" : "euless_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53224}}}
+{ "update" : {"_id" : "castle_rock_co", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":53063}}}
+{ "update" : {"_id" : "cathedral_city_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52977}}}
+{ "update" : {"_id" : "kingsport_tn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52962}}}
+{ "update" : {"_id" : "lake_havasu_city_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52844}}}
+{ "update" : {"_id" : "pensacola_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52703}}}
+{ "update" : {"_id" : "hoboken_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52575}}}
+{ "update" : {"_id" : "yucaipa_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52536}}}
+{ "update" : {"_id" : "watsonville_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52477}}}
+{ "update" : {"_id" : "richland_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52413}}}
+{ "update" : {"_id" : "delano_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52403}}}
+{ "update" : {"_id" : "hoffman_estates_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52398}}}
+{ "update" : {"_id" : "florissant_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52363}}}
+{ "update" : {"_id" : "placentia_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52206}}}
+{ "update" : {"_id" : "west_new_york_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52122}}}
+{ "update" : {"_id" : "dublin_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52105}}}
+{ "update" : {"_id" : "oak_park_il", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52066}}}
+{ "update" : {"_id" : "peabody_ma", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":52044}}}
+{ "update" : {"_id" : "perth_amboy_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51982}}}
+{ "update" : {"_id" : "battle_creek_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51848}}}
+{ "update" : {"_id" : "bradenton_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51763}}}
+{ "update" : {"_id" : "gilroy_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51701}}}
+{ "update" : {"_id" : "milford_city__balance__ct", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51644}}}
+{ "update" : {"_id" : "albany_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51583}}}
+{ "update" : {"_id" : "ankeny_ia", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51567}}}
+{ "update" : {"_id" : "la_crosse_wi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51522}}}
+{ "update" : {"_id" : "burlington_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51510}}}
+{ "update" : {"_id" : "desoto_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51483}}}
+{ "update" : {"_id" : "harrisonburg_va", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51395}}}
+{ "update" : {"_id" : "minnetonka_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51368}}}
+{ "update" : {"_id" : "elkhart_in", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51265}}}
+{ "update" : {"_id" : "lakewood_oh", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51143}}}
+{ "update" : {"_id" : "glendora_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":51074}}}
+{ "update" : {"_id" : "southaven_ms", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50997}}}
+{ "update" : {"_id" : "charleston_wv", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50821}}}
+{ "update" : {"_id" : "joplin_mo", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50789}}}
+{ "update" : {"_id" : "enid_ok", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50725}}}
+{ "update" : {"_id" : "palm_beach_gardens_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50699}}}
+{ "update" : {"_id" : "brookhaven_ga", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50603}}}
+{ "update" : {"_id" : "plainfield_nj", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50588}}}
+{ "update" : {"_id" : "grand_island_ne", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50550}}}
+{ "update" : {"_id" : "palm_desert_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50508}}}
+{ "update" : {"_id" : "huntersville_nc", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50458}}}
+{ "update" : {"_id" : "tigard_or", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50444}}}
+{ "update" : {"_id" : "lenexa_ks", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50344}}}
+{ "update" : {"_id" : "saginaw_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50303}}}
+{ "update" : {"_id" : "kentwood_mi", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50233}}}
+{ "update" : {"_id" : "doral_fl", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50213}}}
+{ "update" : {"_id" : "apple_valley_mn", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50201}}}
+{ "update" : {"_id" : "grapevine_tx", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50195}}}
+{ "update" : {"_id" : "aliso_viejo_ca", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50175}}}
+{ "update" : {"_id" : "sammamish_wa", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50169}}}
+{ "update" : {"_id" : "casa_grande_az", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":50111}}}
+{ "update" : {"_id" : "troy_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":49974}}}
+{ "update" : {"_id" : "niagara_falls_ny", "_type" : "city", "_index" : "suggestions_three"} }
+{"doc":{"suggest": {"weight":49468}}}

@@ -2,6 +2,8 @@ U.S. Shapes Indexer
 =========
 Retrieve, convert, and index shapefiles into Elasticsearch, and generate a suggestions index for those locations
 
+The end result will be two new indices on your Elasticsearch: 'shapes' and 'suggestions'. Each shape type (neighborhood, city, state, and zip) is indexed under their respective types. Similarly, for neighborhoods, cities and zip codes, a suggestion type is generated for each that can be used with a completion suggester.
+
 # Install
 Follow the instructions below for non-Python dependencies, then
 ```
@@ -12,7 +14,7 @@ pip install usshapes
 A runnable module is included that can be used to automate the process of indexing your data. This is the most likely way you want to use this package.
 
 ```
-$ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--excludes=] [--no-shapes] [--no-suggestions] [--sleep-time]
+$ us-shapes.py [--es-host=<elasticsearch-host>] [[--no-batch] | [--batch-size=]] [--excludes=<excluded-types>] [--skip-shapes] [--skip-suggestions] [--sleep-time=] [--num-shards=] [--num-replicas=]
 ```
 
 ## Options:
@@ -24,6 +26,8 @@ $ us-shapes.py [--es-host=] [--ogre-host=] [[--no-batch] | [--batch-size=]] [--e
 * no-shapes: skip creation and indexing of shapes
 * no-suggestions: skip creation and indexing of suggestions
 * sleep-time: time to sleep between bulk index operations, in seconds; default: 0.1
+* num-shards: the number of primary shards to initialize for indices; default 3
+* num-replicas: the number of replicas to initialize for indices; default 0
 
 # Dependencies:
 * [Elasticsearch](http://www.elasticsearch.org)
@@ -69,7 +73,7 @@ ogre -p 3000
 ```
 
 ### Gotcha! A note about ogre and Big Files
-Some of the files downloaded from census.gov and zillow.com are Big Files. The zip archive containing the raw zip code shapefiles is half a gigabyte and it expands to a single GeoJSON file weighing in at around 1.5 GB. The ogre client currently does not accept a command line setting for adjusting the timeout used by the underlying ogr2ogr library to convert the shapefpiles to GeoJSON, and it's default timeout is 15 seconds. This is not enough time to convert these files. I've submitted a patch to the author of ogre that would allow setting a timeout, but until then, here's what you need to do:
+Some of the files downloaded from census.gov and zillow.com are Big Files. The zip archive containing the raw zip code shapefiles is half a gigabyte and it expands to a single GeoJSON file weighing in at around 1.5 GB. The ogre client currently does not accept a command line setting for adjusting the timeout used by the underlying ogr2ogr library to convert the shapefiles to GeoJSON, and its default timeout is 15 seconds. This is not enough time to convert these files. I've submitted a patch to the author of ogre that would allow setting a timeout, but until then, here's what you need to do:
 
 Go to the ogre installation directory where you're running the ogre client from and open up ```index.js```. In the post route for /convert, there should be the following declaration:
 ```
