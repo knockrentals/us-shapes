@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='usshapes',
-      version='0.5.1',
+      version='0.6.0',
       description='Create an Elasticsearch index of United States shapefiles, and generate a suggestions index for those locations',
       author='Daniel Sarfati',
       author_email='daniel@knockrentals.com',
